@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Register as Student</title>
+
+    <link rel="stylesheet" href="../CSS/styleregistration.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script type = "text/javascript"
+         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+      </script> 
+      
+    <script>
+         $(document).ready(function() {
+            $('select').material_select();
+            $(".dropdown-content>li>a").css("color", '#ffffff');
+         });
+    </script>
+  </head>
+
+  <body>
+    <form class="box" action="index.html" method="post" autocomplete="off">
+      <h1 style="color: white; padding-top: 30px">Sign in</h1>
+      <hr
+        style="
+          width: 50%;
+          height: 1px;
+          border: none;
+          background: white;
+          margin-bottom: 50px;
+          margin-top: 0px;
+        "
+      />
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="first_name" style="color: white" type="text" />
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input
+                id="last_name"
+                style="color: white"
+                type="text"
+                class="validate"
+              />
+              <label for="last_name">Last Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input
+                id="first_name"
+                style="color: white"
+                type="text"
+                class="validate"
+              />
+              <label for="first_name">USN</label>
+            </div>
+            <div class="input-field col s6">
+              <input
+                id="last_name"
+                style="color: white"
+                type="text"
+                class="validate"
+              />
+              <label for="last_name">Gender</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input
+                id="email"
+                style="color: white"
+                type="email"
+                class="validate"
+              />
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input
+                id="password"
+                style="color: white"
+                type="password"
+                class="validate"
+              />
+              <label for="password">Password</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input
+                id="password"
+                style="color: white"
+                type="password"
+                class="validate"
+              />
+              <label for="password">Re-enter Password</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input
+                id="last_name"
+                style="color: white"
+                type="text"
+                class="validate"
+              />
+              <label for="last_name">Department</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input
+                id="first_name"
+                style="color: white"
+                type="text"
+                class="validate"
+              />
+              <label for="first_name">Semester</label>
+            </div>
+            <div class="input-field col s6">
+              <input
+                id="first_name"
+                style="color: white"
+                type="text"
+                class="validate"
+              />
+              <label for="first_name">Branch</label>
+            </div>
+            
+          </div>
+          <div>
+            <input type="submit" name="" value="Register" />
+          </div>
+        </form>
+      </div>
+    </form>
+  </body>
+</html>

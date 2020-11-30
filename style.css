@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    /* background: #34495e; */
+    background: #1b262c;
+    /* background: #18191a; */
+}
+
+.mainbg {
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.logohead {
+    font-family: "Fondamento", cursive;
+    font-size: 37px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.boxlogin {
+    display: flex;
+    padding-top: 5rem;
+    justify-content: space-around;
+}
+
+#Choice {
+    display: flex;
+    height: 370px;
+    width: 270px;
+    border: 2px solid white;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+#Choice:before,
+#Choice:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.5s;
+}
+
+#Choice:before {
+    top: 8%;
+    right: 8%;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+}
+
+#Choice:after {
+    bottom: 8%;
+    left: 8%;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+}
+
+#Choice:hover:before,
+#Choice:hover:after {
+    opacity: 1;
+    width: 90%;
+    height: 90%;
+}
+
+#Choice img {
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    display: block;
+    transition: all 0.3s;
+}
+
+#Choice:hover img {
+    transform: scale(1.15);
+}
+
+.box-content {
+    width: 100%;
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    color: black;
+}
+
+.name,
+.login-trans {
+    display: block;
+    font-size: 25px;
+    line-height: 10px;
+    margin: 0;
+    opacity: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s;
+}
+
+.login-trans,
+#Choice:hover .name {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+#Choice:hover .login-trans {
+    opacity: 1;
+    bottom: 6px;
+}
