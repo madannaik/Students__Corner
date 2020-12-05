@@ -91,7 +91,7 @@ include('dashBoard.php');
                             <div class="user-content">
                                 <h6 class="text-capitalize user-name" style="color: white">Carry Johnshon</h6>
                                 <p class=" text-capitalize text-light small blockquote-footer " >Computer Science Department</p>
-                                <hr style="width: 300px;height:1px;border:none;background-color:white">
+                                <hr style="width: 300px;height:2px;border:none;background-color:white">
                                 <p class="small text-light mb-0 " >Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nemo harum repellendus aut itaque. Temporibus quaerat dolores ut, cupiditate molestiae commodi! Distinctio praesentium, debitis aut minima doloribus earum
                                     quia commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, soluta perferendis! Iusto sequi, quae sunt iste voluptate rerum nulla perspiciatis accusantium cupiditate, officia reprehenderit sit, architecto totam quo eius dignissimos! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum animi, dolorum odio error voluptas quis, veritatis quisquam distinctio, molestias eligendi enim ipsam cum pariatur optio! Amet accusamus maxime voluptatem vel.</p>
                             </div>
@@ -107,7 +107,7 @@ include('dashBoard.php');
                             <div class="user-content">
                                 <h6 class="text-capitalize text-light user-name">Carry Johnshon</h6>
                                 <p class=" text-capitalize text-light small blockquote-footer">Electronics and communication department</p>
-                                <hr style="width: 300px;height:1px;border:none;background-color:white">
+                                <hr style="width: 300px;height:2px;border:none;background-color:white">
                                 <p class="small text-light mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nemo harum repellendus aut itaque. Temporibus quaerat dolores ut, cupiditate molestiae commodi! Distinctio praesentium, debitis aut minima doloribus earum
                                     quia commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, soluta perferendis! Iusto sequi, quae sunt iste voluptate rerum nulla perspiciatis accusantium cupiditate, officia reprehenderit sit, architecto totam quo eius dignissimos! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum animi, dolorum odio error voluptas quis, veritatis quisquam distinctio, molestias eligendi enim ipsam cum pariatur optio! Amet accusamus maxime voluptatem vel.
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nemo harum repellendus aut itaque. Temporibus quaerat dolores ut, cupiditate molestiae commodi! Distinctio praesentium, debitis aut minima doloribus earum
