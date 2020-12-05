@@ -71,3 +71,5 @@ include('dashBoard.php');
 </body>
 
 </html>
+
+<!-- Check pull trigers for email -->
