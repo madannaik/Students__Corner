@@ -21,4 +21,7 @@
 
 </html>
 
+<<<<<<< Updated upstream
 <!-- TODO: teacherid, firstname, lastname, department, grnder, qualification, email -->
+=======
+>>>>>>> Stashed changes
