@@ -16,7 +16,7 @@
 
     <h5>
       Don't have an account?
-      <a href="registrationteacher.html">Sign in here</a>
+      <a href="registrationteacher.php">Sign in here</a>
     </h5>
   </form>
 </body>
