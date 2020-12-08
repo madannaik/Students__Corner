@@ -96,7 +96,7 @@
           </div>
           
           <div class="row">
-            <div class="input-field col s6">
+            <div class="input-field col s12">
               <input
                 id="first_name"
                 style="color: white"
@@ -105,14 +105,26 @@
               />
               <label for="first_name" style="color: white">Qualification</label>
             </div>
-            <div class="input-field col s6">
-              <input
-                id="last_name"
-                style="color: white"
-                type="text"
-                class="validate"
-              />
-              <label for="last_name" style="color: white">Department</label>
+            
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <div
+                style="display: flex; flex-direction: columns; flex-wrap: wrap"
+              >
+                <div class="custom-select" style="width: 400px">
+                  <select>
+                    <option value="0">Select Department</option>
+                    <option value="1">Computer Science Engineering</option>
+                    <option value="2">Information Science Engineering</option>
+                    <option value="3">Mechanical Engineering</option>
+                    <option value="4">Electronics and Communication Engineering</option>
+                  </select>
+                </div>
+                <hr
+                 class="my-border-style"
+                />
+              </div>
             </div>
           </div>
           <div>
