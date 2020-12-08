@@ -21,6 +21,7 @@ include('dashBoard.php');
 
 <!--This code is about announcement pop up-->
 <div id="my-overlay" ">
+<!--TODO:Increase the width of pop up form-->
     <div class="my-form-popup" id="myForm">
         <form action="" class="form-container">
             <h1>Announce</h1>
