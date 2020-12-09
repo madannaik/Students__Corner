@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -11,7 +12,7 @@
   </head>
   <body>
 
-    <form class="box" action="index.html" method="post" autocomplete="off">
+    <form class="box" action="registrationteacherdb.php" method="post" autocomplete="off">
       <h1 style="color: white; padding-top: 30px;">Sign Up</h1>
       <hr
         style="
@@ -43,12 +44,12 @@
           <div class="row">
             <div class="input-field col s6">
               <input
-                id="first_name"
+                id="teacher_id"
                 style="color: white"
                 type="text"
                 class="validate"
               />
-              <label for="first_name" style="color: white">Teacher ID</label>
+              <label for="teacher_id" style="color: white">Teacher ID</label>
             </div>
             <div class="input-field col s6">
               <div
@@ -60,10 +61,10 @@
                 "
               >
                 <div class="custom-select" style="width: 400px">
-                  <select>
-                    <option value="0">Gender</option>
-                    <option value="1">Male</option>
-                    <option value="2">Female</option>
+                  <select name="gender">
+                    <option value="NA">Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
                   </select>
                 </div>
                 <hr
@@ -94,16 +95,28 @@
               <label for="password" style="color: white">Password</label>
             </div>
           </div>
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <input
+                            id="re_password"
+                            style="color: white"
+                            type="password"
+                            class="validate"
+                    />
+                    <label for="re_password" style="color: white">Re Enter Password</label>
+                </div>
+            </div>
           
           <div class="row">
             <div class="input-field col s12">
               <input
-                id="first_name"
+                id="designation"
                 style="color: white"
                 type="text"
                 class="validate"
               />
-              <label for="first_name" style="color: white">Qualification</label>
+              <label for="designation" style="color: white">Designation</label>
             </div>
             
           </div>
@@ -112,13 +125,14 @@
               <div
                 style="display: flex; flex-direction: columns; flex-wrap: wrap"
               >
-                <div class="custom-select" style="width: 400px">
-                  <select>
-                    <option value="0">Select Department</option>
-                    <option value="1">Computer Science Engineering</option>
-                    <option value="2">Information Science Engineering</option>
-                    <option value="3">Mechanical Engineering</option>
-                    <option value="4">Electronics and Communication Engineering</option>
+                <div class="custom-select" style="width: 400px" >
+                  <select name="deptartment">
+                    <option value="none">Select Department</option>
+                    <option value="cse">Computer Science Engineering</option>
+                    <option value="ise">Information Science Engineering</option>
+                    <option value="me">Mechanical Engineering</option>
+                    <option value="ec">Electronics and Communication Engineering</option>
+                      <option value="eee">Electronics and Electrical Engineering</option>
                   </select>
                 </div>
                 <hr
