@@ -21,7 +21,7 @@
                 <li><a href="article.php" ><i class="fas fa-archive"></i>Articles</a></li>
                 <li><a href="notes.php" ><i class="fas fa-file" aria-hidden="true"></i>Notes</a></li>
                 <li><a href="lect_profile.php" ><i class="fas fa-user"></i>Lecturers Profile</a></li>
-                <li><a href="" ><i class="fas fa-info-circle"></i>About</a></li>
+                <li><a href="myprofile.php" ><i class="fas fa-info-circle"></i>My Profile</a></li>
             </ul>
 
             <div class="social_media" style="margin-bottom: 10px;">

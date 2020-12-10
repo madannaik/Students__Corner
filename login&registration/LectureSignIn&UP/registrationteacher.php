@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -24,30 +23,34 @@
           margin-top: 0px;
         "
       />
-      <div class="row">
+        <div class="row">
         <form class="col s12">
           <div class="row">
             <div class="input-field col s6">
-              <input id="first_name" style="color: white" type="text" />
+              <input id="first_name" name="first_name" style="color: white" type="text" required/>
               <label for="first_name" style="color: white">First Name</label>
             </div>
             <div class="input-field col s6">
               <input
                 id="last_name"
+                name="last_name"
                 style="color: white"
                 type="text"
                 class="validate"
+                required
               />
-              <label for="last_name" style="color: white">Last Name</label>
+              <label for="last_name"  style="color: white">Last Name</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s6">
               <input
                 id="teacher_id"
+                name="teacher_id"
                 style="color: white"
                 type="text"
                 class="validate"
+                required
               />
               <label for="teacher_id" style="color: white">Teacher ID</label>
             </div>
@@ -77,9 +80,11 @@
             <div class="input-field col s12">
               <input
                 id="email"
+                name="email"
                 style="color: white"
                 type="email"
                 class="validate"
+                required
               />
               <label for="email" style="color: white">Email</label>
             </div>
@@ -88,36 +93,41 @@
             <div class="input-field col s12">
               <input
                 id="password"
+                name="password"
                 style="color: white"
                 type="password"
                 class="validate"
+                required
               />
               <label for="password" style="color: white">Password</label>
             </div>
           </div>
-
-            <div class="row">
-                <div class="input-field col s12">
-                    <input
-                            id="re_password"
-                            style="color: white"
-                            type="password"
-                            class="validate"
-                    />
-                    <label for="re_password" style="color: white">Re Enter Password</label>
-                </div>
-            </div>
           
           <div class="row">
             <div class="input-field col s12">
               <input
                 id="designation"
+                name="designation"
                 style="color: white"
                 type="text"
                 class="validate"
+                required
               />
               <label for="designation" style="color: white">Designation</label>
             </div>
+
+              <div class="row">
+                  <div class="input-field col s12">
+                      <input
+                              id="profile_picture"
+                              name="profile_picture"
+                              style="color: white"
+                              type="text"
+                              class="validate"
+                              required
+                      />
+                      <label for="designation" style="color: white">Profile Picture Link</label>
+                  </div>
             
           </div>
           <div class="row">
@@ -126,8 +136,8 @@
                 style="display: flex; flex-direction: columns; flex-wrap: wrap"
               >
                 <div class="custom-select" style="width: 400px" >
-                  <select name="deptartment">
-                    <option value="none">Select Department</option>
+                  <select name="department">
+                    <option value="NA">Select Department</option>
                     <option value="cse">Computer Science Engineering</option>
                     <option value="ise">Information Science Engineering</option>
                     <option value="me">Mechanical Engineering</option>
@@ -159,23 +169,3 @@
     ></script>
   </body>
 </html>
-
-
-
-<!-- <form class="box" action="index.html" method="post">
-  <h1>Sign in</h1>
-  <input type="text" name="" id="" placeholder="Name">
-  <input type="text" name="" placeholder="Email">
-
-  <input type="text" name="" id="" placeholder="Department">
-<input type="text" name="" id="" placeholder="ID">
-<input type="text" name="" id="" placeholder="Qualification">
-  <input type="text" name="" id="" placeholder="Gender">
-
-  <input type="password" name="" placeholder="Password">
- <input type="submit" name="" value="Register">
- <h5>
-   Already have an account?
-   <a href="loginteacher.html">Log in here</a>
- </h5>
-</form> -->

@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <form class="box" action="index.html" method="post" autocomplete="off">
+    <form class="box" action="registrationstudentdb.php" method="post" autocomplete="off">
       <h1 style="color: white; padding-top: 30px">Sign Up</h1>
       <hr
         style="
@@ -28,7 +28,7 @@
         <form class="col s12">
           <div class="row">
             <div class="input-field col s6">
-              <input id="first_name" style="color: white" type="text" />
+              <input id="first_name" style="color: white" type="text" name="first_name required"/>
               <label for="first_name" style="color: white">First Name</label>
             </div>
             <div class="input-field col s6">
@@ -37,6 +37,8 @@
                 style="color: white"
                 type="text"
                 class="validate"
+                name="last_name"
+                required
               />
               <label for="last_name" style="color: white">Last Name</label>
             </div>
@@ -44,27 +46,29 @@
           <div class="row">
             <div class="input-field col s6">
               <input
-                id="first_name"
+                id="usn"
                 style="color: white"
                 type="text"
                 class="validate"
+                name="usn"
+                required
               />
-              <label for="first_name" style="color: white">USN</label>
+              <label for="usn" style="color: white">USN</label>
             </div>
             <div class="input-field col s6">
               <div
                 style="
                   display: flex;
-                  flex-direction: columns;
+                  flex-direction: columns;;
                   flex-wrap: wrap;
                   padding-top: 5px;
                 "
               >
                 <div class="custom-select" style="width: 400px">
-                  <select>
-                    <option value="0">Gender</option>
-                    <option value="1">Male</option>
-                    <option value="2">Female</option>
+                  <select name="gender">
+                    <option value="NA">Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
                   </select>
                 </div>
                 <hr
@@ -80,8 +84,10 @@
                 style="color: white"
                 type="email"
                 class="validate"
+                name="email"
+                required
               />
-              <label for="email" style="color: white">Email</label>
+              <label for="email" style="color: white" >Email</label>
             </div>
           </div>
           <div class="row">
@@ -91,22 +97,38 @@
                 style="color: white"
                 type="password"
                 class="validate"
+                name="password"
+                required
               />
               <label for="password" style="color: white">Password</label>
             </div>
           </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input
+                            id="profile_picture"
+                            style="color: white"
+                            type="password"
+                            class="validate"
+                            name="profile_picture"
+
+                    />
+                    <label for="profile_picture" style="color: white">Profile Picture Link</label>
+                </div>
+            </div>
           <div class="row">
             <div class="input-field col s12">
               <div
-                style="display: flex; flex-direction: columns; flex-wrap: wrap"
+                style="display: flex; flex-direction: columns; flex-wrap: wrap";
               >
                 <div class="custom-select" style="width: 400px">
-                  <select>
-                    <option value="0">Select Area of Study</option>
-                    <option value="1">Computer Science Engineering</option>
-                    <option value="2">Information Science Engineering</option>
-                    <option value="3">Mechanical Engineering</option>
-                    <option value="4">Electronics and Communication Engineering</option>
+                  <select name="department">
+                    <option value="NA">Select Area of Study</option>
+                    <option value="cse">Computer Science Engineering</option>
+                    <option value="ise">Information Science Engineering</option>
+                    <option value="me">Mechanical Engineering</option>
+                    <option value="ec">Electronics and Communication Engineering</option>
+                      <option value="eee">Electronics and Electrical Engineering</option>
                   </select>
                 </div>
                 <hr
@@ -118,22 +140,23 @@
           <div style="display: flex; flex-direction: row; flex-wrap: wrap">
             <div class="input-field col s6">
               <div
-              style="display: flex; flex-direction: columns; flex-wrap: wrap"
+              style="display: flex; flex-direction: columns; flex-wrap: wrap";
             >
               <div
                 class="custom-select"
                 style="width: 400px"
               >
-                <select>
+                <select  name="semester">
                   <option value="0">Select Semester</option>
                   <option value="1">I</option>
                   <option value="2">II</option>
                   <option value="3">III</option>
                   <option value="4">IV</option>
-                  <option value="1">V</option>
-                  <option value="2">VI</option>
-                  <option value="3">VII</option>
-                  <option value="4">VII</option>
+                  <option value="5">V</option>
+                  <option value="6">VI</option>
+                  <option value="6">VII</option>
+                  <option value="7">VII</option>
+                    <option value="8">VIII</option>
                 </select>
               </div>
               <hr class="my-border-style"/>
@@ -141,16 +164,16 @@
             </div>
             <div class="input-field col s6">
               <div
-                style="display: flex; flex-direction: columns; flex-wrap: wrap"
+                style="display: flex; flex-direction: columns; flex-wrap: wrap";
               >
                 <div
                   class="custom-select"
                   style="width: 200px;"
                 >
-                  <select>
-                    <option value="0" style="color: black">Select Section:</option>
-                    <option value="1">A</option>
-                    <option value="2">B</option>
+                  <select name="section">
+                    <option value="NA" style="color: black">Select Section:</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
                   </select>
                 </div>
                 <hr
@@ -160,12 +183,13 @@
             </div>
           </div>
 
-          
+            <div>
+                <input type="submit" name="" value="Register" />
+            </div>
 
-          <div>
-            <input type="submit" name="" value="Register" />
-          </div>
+
         </form>
+
       </div>
     </form>
 

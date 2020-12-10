@@ -1,10 +1,12 @@
 <?php
-include('dashBoard.php');
+//    including dashboard UI
+    include('dashBoard.php');
+//    including the file for connection and to retrive data
+    include('config.php');
 ?>
 
-
 <!DOCTYPE html>
-<html>
+<html lang="">
 
 <head>
     <style>

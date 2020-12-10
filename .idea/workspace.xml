@@ -1,8 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="451a1014-139e-4f0c-9008-cd72f89a17f8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dashboard/HTML_PHP/config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dashboard/HTML_PHP/myprofile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login&amp;registration/LectureSignIn&amp;UP/loginteacherdb.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login&amp;registration/StudentSingIN&amp;Up/loginstudentdb.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login&amp;registration/StudentSingIN&amp;Up/registrationstudentdb.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login&amp;registration/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/HTML_PHP/about.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/HTML_PHP/announcement.php" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/HTML_PHP/announcement.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/HTML_PHP/article.php" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/HTML_PHP/article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/HTML_PHP/dashBoard.php" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/HTML_PHP/dashBoard.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dashboard/HTML_PHP/lect_profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/HTML_PHP/lect_profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login&amp;registration/LectureSignIn&amp;UP/loginteacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/login&amp;registration/LectureSignIn&amp;UP/loginteacher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login&amp;registration/LectureSignIn&amp;UP/registrationteacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/login&amp;registration/LectureSignIn&amp;UP/registrationteacher.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login&amp;registration/LectureSignIn&amp;UP/registrationteacherdb.php" beforeDir="false" afterPath="$PROJECT_DIR$/login&amp;registration/LectureSignIn&amp;UP/registrationteacherdb.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login&amp;registration/StudentSingIN&amp;Up/loginstudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/login&amp;registration/StudentSingIN&amp;Up/loginstudent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login&amp;registration/StudentSingIN&amp;Up/registrationstudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/login&amp;registration/StudentSingIN&amp;Up/registrationstudent.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,15 +56,29 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4" />
   <component name="ProjectId" id="1lEgoDWcocd0KLLVpriN0afIN53" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql&#10;mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\newxammp\htdocs\STUDENTSCORNER\Students__Corner\Dashboard\HTML_PHP" />
+      <recent name="C:\newxammp\htdocs\STUDENTSCORNER\Students__Corner\Dashboard\HTML_PHP\templates" />
+      <recent name="C:\newxammp\htdocs\STUDENTSCORNER\Students__Corner\login&amp;registration" />
+      <recent name="C:\newxammp\htdocs\STUDENTSCORNER\Students__Corner\Dashboard\HTML_PHP\announcement" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -43,20 +96,66 @@
       <workItem from="1607407004068" duration="18000" />
       <workItem from="1607407035085" duration="232000" />
       <workItem from="1607410269554" duration="50000" />
+      <workItem from="1607523739333" duration="4472000" />
+      <workItem from="1607533061933" duration="10095000" />
+      <workItem from="1607552044761" duration="1360000" />
+      <workItem from="1607580167112" duration="1484000" />
+      <workItem from="1607581682372" duration="3866000" />
+      <workItem from="1607595075515" duration="8093000" />
+      <workItem from="1607607561927" duration="5383000" />
+      <workItem from="1607620496138" duration="1844000" />
+      <workItem from="1607623005028" duration="6701000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="360" y="0" key="#PHP" timestamp="1607167869378">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="360" y="0" key="#PHP/0.0.1280.720@0.0.1280.720" timestamp="1607167869378" />
-    <state x="96" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607183874291">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state x="80" y="177" key="#SQL_Dialects" timestamp="1607628854040">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="80" y="177" key="#SQL_Dialects/0.0.1280.680@0.0.1280.680" timestamp="1607628854040" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607609316518">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1607609316518" />
     <state x="96" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1607183874291" />
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1607584149420">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="93" y="93" width="1095" height="495" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1607584149420" />
+    <state width="198" height="457" key="HiddenNamespacesPopup" timestamp="1607581219632">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="198" height="457" key="HiddenNamespacesPopup/0.0.1280.680@0.0.1280.680" timestamp="1607581219632" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1607581662501">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1607581662501" />
+    <state x="490" y="247" key="VCS.ChangelistChooser" timestamp="1607584013635">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="490" y="247" key="VCS.ChangelistChooser/0.0.1280.680@0.0.1280.680" timestamp="1607584013635" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1607581057007">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1607581057007" />
   </component>
 </project>
