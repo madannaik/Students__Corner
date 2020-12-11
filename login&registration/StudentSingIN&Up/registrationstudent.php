@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <form class="box" action="registrationstudentdb.php" method="post" autocomplete="off">
+    <form class="box" action="registrationstudentdb.php" method="post" autocomplete="on" >
       <h1 style="color: white; padding-top: 30px">Sign Up</h1>
       <hr
         style="
@@ -28,7 +28,7 @@
         <form class="col s12">
           <div class="row">
             <div class="input-field col s6">
-              <input id="first_name" style="color: white" type="text" name="first_name required"/>
+              <input  id="first_name" style="color: white" type="text" name="first_name required"/>
               <label for="first_name" style="color: white">First Name</label>
             </div>
             <div class="input-field col s6">

@@ -6,18 +6,48 @@
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Register as Student</title>
+    <link rel="stylesheet" href="../CSS/announcement.css">
     <link rel="stylesheet" href="../CSS/article.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 
 <body>
+<!--This code is about announcement pop up-->
+<div id="my-overlay" >
+    <!--TODO:Increase the width of pop up form-->
+    <div class="my-form-popup" id="myForm">
+        <form action="" class="form-container">
+            <h1>Announce</h1>
+            <div class="form-group" style="width: 360px">
+                <label for="exampleFormControlTextarea1">Input Text</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Provide link for your article image</label>
+                <input type="url" class="form-control" id="exampleFormControlInput1" placeholder="https://yoururl.com">
+            </div>
 
+
+
+
+            <div class="row">
+                <div class="col">
+                    <button onclick="off()" type="button" class="btn btn-primary btn-sm bg-dark" style="background-color: #181717">Cancel</button>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-primary btn-sm bg">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!--************************************************************************************************************************************************************************-->
 <section id="cards">
     <div class="container py-2">
         <div class="d-flex flex-column flex-wrap align-items-center ">
@@ -68,7 +98,23 @@
     </div>
 </section>
 
+<!--this code is for Floating button for pop up form -->
+<div class="my-pop-up-button" onclick="on()">
+    <i class="fas fa-plus" style="padding-top: 20px;"></i>
+</div>
 
+
+<script>
+    function on() {
+        document.getElementById("my-overlay").style.display = "block";
+        // document.getElementById("my-body").style.overflow = "hidden";
+    }
+
+    function off() {
+        document.getElementById("my-overlay").style.display = "none";
+        // document.getElementById("my-body").style.overflow = "scroll";
+    }
+</script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>

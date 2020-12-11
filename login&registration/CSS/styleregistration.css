@@ -10,7 +10,7 @@ body{
   display: flex;
   flex-direction: column;
   border-radius: 18px;
-  
+
   width: 500px;
   padding-right: 40px;
   /* padding: 40px; */
@@ -28,8 +28,6 @@ body{
   text-align: center;
   margin-top: 5%;
   margin-bottom: 100px;
-  
-  
 }
 
 
