@@ -23,9 +23,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="451a1014-139e-4f0c-9008-cd72f89a17f8" name="Default Changelist" comment="">
+<<<<<<< Updated upstream
       <change afterPath="$PROJECT_DIR$/Dashboard/HTML_PHP/announcementdb.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dashboard/HTML_PHP/announcement.php" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/HTML_PHP/announcement.php" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/Dashboard/CSS/lect_profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/HTML_PHP/announcement.php" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/HTML_PHP/announcement.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/HTML_PHP/article.php" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/HTML_PHP/article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/HTML_PHP/lect_profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/HTML_PHP/lect_profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard/HTML_PHP/myprofile.php" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/HTML_PHP/myprofile.php" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,11 +61,14 @@
     <property name="DatabaseDriversLRU" value="mysql&#10;mariadb" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Dashboard/CSS" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MADAN\Documents\GitHub\Students__Corner\Dashboard\CSS" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\newxammp\htdocs\STUDENTSCORNER\Students__Corner\Dashboard\HTML_PHP" />
       <recent name="C:\newxammp\htdocs\STUDENTSCORNER\Students__Corner\Dashboard\HTML_PHP\templates" />
@@ -89,8 +101,12 @@
       <workItem from="1607607561927" duration="5383000" />
       <workItem from="1607620496138" duration="1844000" />
       <workItem from="1607623005028" duration="6701000" />
+<<<<<<< Updated upstream
       <workItem from="1607634431671" duration="2432000" />
       <workItem from="1607667390065" duration="945000" />
+=======
+      <workItem from="1607665774003" duration="2206000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>

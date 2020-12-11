@@ -2,7 +2,7 @@
 //    including dashboard UI
     include('dashBoard.php');
 //    including the file for connection and to retrive data
-    include('config.php');
+//    include('config.php');
 ?>
 
 <!DOCTYPE html>
