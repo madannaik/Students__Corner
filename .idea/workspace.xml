@@ -23,25 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="451a1014-139e-4f0c-9008-cd72f89a17f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dashboard/HTML_PHP/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dashboard/HTML_PHP/myprofile.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login&amp;registration/LectureSignIn&amp;UP/loginteacherdb.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login&amp;registration/StudentSingIN&amp;Up/loginstudentdb.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login&amp;registration/StudentSingIN&amp;Up/registrationstudentdb.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login&amp;registration/logout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dashboard/HTML_PHP/announcementdb.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/HTML_PHP/about.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Dashboard/HTML_PHP/announcement.php" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/HTML_PHP/announcement.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/HTML_PHP/article.php" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/HTML_PHP/article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/HTML_PHP/dashBoard.php" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/HTML_PHP/dashBoard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dashboard/HTML_PHP/lect_profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard/HTML_PHP/lect_profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login&amp;registration/LectureSignIn&amp;UP/loginteacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/login&amp;registration/LectureSignIn&amp;UP/loginteacher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login&amp;registration/LectureSignIn&amp;UP/registrationteacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/login&amp;registration/LectureSignIn&amp;UP/registrationteacher.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login&amp;registration/LectureSignIn&amp;UP/registrationteacherdb.php" beforeDir="false" afterPath="$PROJECT_DIR$/login&amp;registration/LectureSignIn&amp;UP/registrationteacherdb.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login&amp;registration/StudentSingIN&amp;Up/loginstudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/login&amp;registration/StudentSingIN&amp;Up/loginstudent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login&amp;registration/StudentSingIN&amp;Up/registrationstudent.php" beforeDir="false" afterPath="$PROJECT_DIR$/login&amp;registration/StudentSingIN&amp;Up/registrationstudent.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +89,8 @@
       <workItem from="1607607561927" duration="5383000" />
       <workItem from="1607620496138" duration="1844000" />
       <workItem from="1607623005028" duration="6701000" />
+      <workItem from="1607634431671" duration="2432000" />
+      <workItem from="1607667390065" duration="945000" />
     </task>
     <servers />
   </component>
@@ -137,6 +123,10 @@
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1607609316518" />
     <state x="96" y="16" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.720@0.0.1280.720" timestamp="1607183874291" />
+    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607635415280">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1607635415280" />
     <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1607584149420">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

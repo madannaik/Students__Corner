@@ -3,6 +3,8 @@
     include('dashBoard.php');
 //    including the file for connection and to retrive data
     include('config.php');
+
+    $label = $_SESSION['label'];
 ?>
 
 <!DOCTYPE html>
@@ -21,46 +23,53 @@
 <body style="background-color:  #fffcfc;scroll-behavior: smooth;" id="my-body">
 
 
-<!--This code is about announcement pop up-->
-<div id="my-overlay" ">
-<!--TODO:Increase the width of pop up form-->
+<?php if ($label == 'teacher'){ ?>
+
+    <!--This code is about announcement pop up-->
+    <div id="my-overlay" ">
+    <!--TODO:Increase the width of pop up form-->
     <div class="my-form-popup" id="myForm">
-        <form action="" class="form-container">
+        <form action="announcementdb.php" class="form-container" method="POST">
             <h1>Announce</h1>
-            <div class="form-group" style="width: 360px">
-                <label for="exampleFormControlTextarea1">Input Text</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <div class="form-group" style="width: 360px" >
+                <label for="exampleFormControlTextarea1" >Title</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" name="title" required></textarea>
             </div>
-            <div class="form-group">
+            <div class="form-group" style="width: 360px" >
+                <label for="exampleFormControlTextarea1">Announcement</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" name="body" required></textarea>
+            </div>
+            <div class="form-group" >
                 <label for="inputState">Choose Department</label>
-                <select id="inputState" class="form-control">
-                    <option selected>Choose...</option>
+                <select id="inputState" class="form-control" name="department" required>
+                    <option selected>All</option>
                     <option>Computer Science Engineering</option>
-                    <option>Electronic and Communication Engineering </option>
+                    <option>Electronic and Communication Engineering</option>
                     <option>Electronics and Electrical Engineering</option>
                     <option>Mechanical Engineering</option>
                     <option>Information and Science Engineering</option>
                 </select>
             </div>
             <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="inputState">Semester</label>
-                    <select id="inputState" class="form-control">
-                        <option selected>Choose semester</option>
-                        <option>I</option>
-                        <option>II</option>
-                        <option>III</option>
-                        <option>IV</option>
-                        <option>V</option>
-                        <option>VI</option>
-                        <option>VII</option>
-                        <option>VIII</option>
+                <div class="form-group col-md-6" >
+                    <label for="inputState" >Semester</label>
+                    <select id="inputState" class="form-control" name="semester" required>
+                        <option selected>All</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+
                     </select>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputState">Section</label>
-                    <select id="inputState" class="form-control">
-                        <option selected>Choose...</option>
+                    <select id="inputState" class="form-control" name="sections" required>
+                        <option selected>All</option>
                         <option>A</option>
                         <option>B</option>
                     </select>
@@ -71,12 +80,16 @@
                     <button onclick="off()" type="button" class="btn btn-primary btn-sm bg-dark" style="background-color: #181717">Cancel</button>
                 </div>
                 <div class="col">
-                    <button type="button" class="btn btn-primary btn-sm bg">Submit</button>
+                    <button type="submit" class="btn btn-primary btn-sm bg">Submit</button>
                 </div>
             </div>
         </form>
     </div>
-</div>
+    </div>
+
+
+<?php } ?>
+
 
 
 
@@ -128,12 +141,12 @@
 
 
 
-
+<?php if ($label == 'teacher'){ ?>
 <!--this code is for Floating button for pop up form -->
     <div class="my-pop-up-button" onclick="on()">
         <i class="fas fa-plus" style="padding-top: 20px;"></i>
     </div>
-
+<?php } ?>
 
 <script>
     function on() {
