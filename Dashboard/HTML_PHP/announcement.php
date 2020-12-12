@@ -2,13 +2,7 @@
 //    including dashboard UI
     include('dashBoard.php');
 //    including the file for connection and to retrive data
-<<<<<<< Updated upstream
-    include('config.php');
-
-    $label = $_SESSION['label'];
-=======
-//    include('config.php');
->>>>>>> Stashed changes
+   include('config.php');
 ?>
 
 <!DOCTYPE html>

@@ -1,15 +1,15 @@
 <?php
-//    include('dashBoard.php');
-//    include('config.php');
-//
-//    $label = $_SESSION['label'];
-//    echo $label;
-//
-//
-//    if(!isset($_SESSION['email'])) {
-//        header('location: ../../index.html');
-//    }
-//?>
+   include('dashBoard.php');
+   include('config.php');
+
+   $label = $_SESSION['label'];
+   echo $label;
+
+
+   if(!isset($_SESSION['email'])) {
+       header('location: ../../index.html');
+   }
+?>
 
 
 <!DOCTYPE html>
