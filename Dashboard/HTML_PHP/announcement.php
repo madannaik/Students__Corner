@@ -1,12 +1,12 @@
 <?php
 //    including dashboard UI
     include('dashBoard.php');
-//    including the file for connection and to retrive data
-   include('config.php');
+//    including the file for connection and to retrieve data
+    include('config.php');
 ?>
 
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
     <style>
@@ -24,7 +24,7 @@
 <?php if ($label == 'teacher'){ ?>
 
     <!--This code is about announcement pop up-->
-    <div id="my-overlay" ">
+    <div id="my-overlay" >
     <!--TODO:Increase the width of pop up form-->
     <div class="my-form-popup" id="myForm">
         <form action="announcementdb.php" class="form-container" method="POST">

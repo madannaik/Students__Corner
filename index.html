@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
 	<title>Students Corner</title>
@@ -100,8 +100,8 @@
 			</section>
 			<div class="boxlogin">
 <!--				<form action="loginteacher.php" method="POST">-->
-				<div id="Choice">
-					 <a href="login&registration\LectureSignIn&UP\loginteacher.php">
+				<div id="Choice" onclick="myFunctionTeacher()">
+
 <!--						<button  type="submit">-->
 						<img src="assets\teachor.jpg" alt="" srcset="" />
 						<div class="box-content">
@@ -109,17 +109,17 @@
 							<span class="login-trans">Login as Teacher</span>
 						</div>
 <!--						</button>-->
-					 </a>
+
 				</div>
 <!--			</form>-->
-				<div id="Choice">
-					<a href="login&registration\StudentSingIN&Up\loginstudent.php"><img src="assets\studont.jpg" alt=""
+				<div id="Choice" onclick="myFunctionStudent()">
+					<img src="assets\studont.jpg" alt=""
 							srcset="" />
 						<div class="box-content">
 							<h3 class="name">Student</h3>
 							<span class="login-trans">Login as Student</span>
 						</div>
-					</a>
+
 				</div>
 			</div>
 		</section>
@@ -151,6 +151,14 @@
 			<p class="copyright">&copy; Students Corner</p>
 		</footer>
 	</div>
+	<script>
+		function myFunctionTeacher() {
+			location.href = "login&registration\\LectureSignIn&UP\\loginteacher.php";
+		}
+		function myFunctionStudent(){
+			location.href = "login&registration\\StudentSingIN&Up\\loginstudent.php";
+		}
+	</script>
 
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
