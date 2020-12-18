@@ -31,11 +31,11 @@
 
 //        free the memory after use and close connection
         mysqli_free_result($result);
-        mysqli_close($conn);
+//        mysqli_close($conn);
 
 //        printing just to check if its working
-        print_r($teacher_info);
-        echo $label;
+//        print_r($teacher_info);
+//        echo $label;
 
     }else{
         if(!isset($_SESSION['email'])){
@@ -46,7 +46,7 @@
         $result = mysqli_query($conn, $s);
         $student_info = mysqli_fetch_assoc($result);
         mysqli_free_result($result);
-        mysqli_close($conn);
+//        mysqli_close($conn);
 
         print_r($student_info);
         echo $label;

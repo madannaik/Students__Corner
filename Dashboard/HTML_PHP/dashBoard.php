@@ -18,7 +18,7 @@
             <h2 style="color:#0175c2;">Student Corner</h2>
             <ul>
                 <li><a href="announcement.php" ><i class="fas fa-bullhorn"></i>Announcements</a></li>
-                <li><a href="article.php" ><i class="fas fa-archive"></i>Projects</a></li>
+                <li><a href="project.php" ><i class="fas fa-archive"></i>Projects</a></li>
                 <li><a href="notes.php" ><i class="fas fa-file" aria-hidden="true"></i>Notes</a></li>
                 <li><a href="lect_profile.php" ><i class="fas fa-user"></i>Lecturers Profile</a></li>
                 <li><a href="myprofile.php" ><i class="fas fa-info-circle"></i>My Profile</a></li>

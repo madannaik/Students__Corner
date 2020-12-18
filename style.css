@@ -34,6 +34,7 @@ body {
     display: flex;
     padding-top: 5rem;
     justify-content: space-around;
+    cursor: pointer;
 }
 
 #Choice {
@@ -44,6 +45,7 @@ body {
     border-radius: 15px;
     overflow: hidden;
     position: relative;
+    cursor: pointer;
 }
 
 #Choice:before,
@@ -55,6 +57,7 @@ body {
     opacity: 0;
     z-index: 1;
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 #Choice:before {
@@ -62,6 +65,7 @@ body {
     right: 8%;
     border-top: 2px solid black;
     border-right: 2px solid black;
+    cursor: pointer;
 }
 
 #Choice:after {
@@ -69,6 +73,7 @@ body {
     left: 8%;
     border-bottom: 2px solid black;
     border-left: 2px solid black;
+    cursor: pointer;
 }
 
 #Choice:hover:before,
@@ -76,6 +81,7 @@ body {
     opacity: 1;
     width: 90%;
     height: 90%;
+    cursor: pointer;
 }
 
 #Choice img {
@@ -84,10 +90,12 @@ body {
     transform: scale(1);
     display: block;
     transition: all 0.3s;
+    cursor: pointer;
 }
 
 #Choice:hover img {
     transform: scale(1.15);
+    cursor: pointer;
 }
 
 .box-content {
@@ -96,6 +104,7 @@ body {
     bottom: 10%;
     left: 10%;
     color: black;
+    cursor: pointer;
 }
 
 .name,
@@ -109,15 +118,18 @@ body {
     bottom: 0;
     left: 0;
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 .login-trans,
 #Choice:hover .name {
     opacity: 0;
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 #Choice:hover .login-trans {
     opacity: 1;
     bottom: 6px;
+    cursor: pointer;
 }

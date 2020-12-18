@@ -19,38 +19,47 @@
     $teacher_info = mysqli_fetch_assoc($result);
 
 //        free the memory after use and close connection
-    mysqli_free_result($result);
-    mysqli_close($conn);
+//    mysqli_free_result($result);
+//    mysqli_close($conn);
 
 //    getting all the values from announcement pages form(popup)
     $body = $_POST['body'];
     $department = $_POST['department'];
     $sections = $_POST['sections'];
     $semester = $_POST['semester'];
-    $title = $_POST['title'];
+    $announcement_link  = $_POST['announcement_link'];
+    $teacher_id = $teacher_info['teacher_id'];
+//    $title = $_POST['title'];
 
 //    checking the department and assigning the short variable to save it in database
-    if($department == 'Computer Science Engineering'){
-        $department_final = 'cse';
-    }elseif ($department == 'Electronic and Communication Engineering'){
-        $department_final = 'ec';
-    }elseif ($department == 'Electronics and Electrical Engineering'){
-        $department_final = 'eee';
-    }elseif ($department == 'Mechanical Engineering'){
-        $department_final = 'me';
-    }elseif($department == 'Information and Science Engineering'){
-        $department_final = 'ise';
-    }else{
-        $department_final = 'all';
-    }
+//    if($department == 'Computer Science Engineering'){
+//        $department_final = 'cse';
+//    }elseif ($department == 'Electronic and Communication Engineering'){
+//        $department_final = 'ec';
+//    }elseif ($department == 'Electronics and Electrical Engineering'){
+//        $department_final = 'eee';
+//    }elseif ($department == 'Mechanical Engineering'){
+//        $department_final = 'me';
+//    }elseif($department == 'Information Science Engineering'){
+//        $department_final = 'ise';
+//    }else{
+//        $department_final = 'all';
+//    }
 
-    echo $body;
-    echo $department;
-    echo $sections;
-    echo $semester;
-    echo $title;
-    echo $department_final;
-    echo $teacher_info['email'];
+//    echo $body;
+//    echo $department;
+//    echo $sections;
+//    echo $semester;
+//    echo $title;
+//    echo $department;
+//    echo $teacher_info['teacher_id'];
+
+    $ann = "INSERT INTO announcement(department_announcement, semester, sections, body, teacher_id, announcement_link) values ('$department','$semester','$sections','$body','$teacher_id','$announcement_link')";
+    mysqli_query($conn, $ann);
+
+    header('location: announcement.php');
+
+
 
 
 

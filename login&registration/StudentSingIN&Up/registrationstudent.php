@@ -124,11 +124,11 @@
                 <div class="custom-select" style="width: 400px">
                   <select name="department">
                     <option value="NA">Select Area of Study</option>
-                    <option value="cse">Computer Science Engineering</option>
-                    <option value="ise">Information Science Engineering</option>
-                    <option value="me">Mechanical Engineering</option>
-                    <option value="ec">Electronics and Communication Engineering</option>
-                      <option value="eee">Electronics and Electrical Engineering</option>
+                    <option value="Computer Science">Computer Science Engineering</option>
+                    <option value="Information Science">Information Science Engineering</option>
+                    <option value="Mechanical Engineering">Mechanical Engineering</option>
+                    <option value="Electronics and Communication">Electronics and Communication Engineering</option>
+                      <option value="Electronics and Electrical">Electronics and Electrical Engineering</option>
                   </select>
                 </div>
                 <hr
