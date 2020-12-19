@@ -9,7 +9,7 @@ body{
     background-color: #efefef;
 }
 
-.container{
+.my-container{
     padding: 20px;
     display: flex;
     /* justify-content: center; */
@@ -17,9 +17,11 @@ body{
     min-height: 90vh;
     margin-left: 120px;
     border-radius: 30px;
+
 }
 
 .card{
+    margin-right: 300px;
     position: relative;
     width: 450px;
     background-color: #fff;
@@ -500,3 +502,14 @@ h1{
         font-family: 'Arvo', serif;
         color: #10181D;
     }
+
+.my-user-profile-class{
+    background: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 30px;
+
+}
