@@ -37,7 +37,7 @@
                 <!-- <div class="hamburger-menu">
                     <div class="center"></div>
                 </div> -->
-                <a href="#" class="mail">
+                <a href="../../login&registration/logout.php" class="mail">
                     <i class="fas fa-sign-out-alt"></i>
                 </a>
                 <div class="main">

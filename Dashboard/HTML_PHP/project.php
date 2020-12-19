@@ -140,7 +140,7 @@
 <!--            </div>-->
             <?php foreach ($projects as $project): ?>
             <div class="col-lg-4 col-md-6 mb-4  ">
-                <div class="shadow-sm border-0 rounded" style="width: 600px;background-color:#2f2f30;margin-bottom: 100px;">
+                <div class="shadow-sm border-0 rounded" style="width: 600px;background-color:#2f2f30;margin-bottom: 30px;">
                     <div class="card-body">
 <!--                        <div class="my-user-profile-class float-left">-->
 <!--                            <img src="https://images.unsplash.com/photo-1495603889488-42d1d66e5523?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=130&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=130" class="" height="40" width="40" style="border-radius: 20px;margin-right: 10px"/>-->
