@@ -110,7 +110,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <script src="https://kit.fontawesome.com/b5cff000aa.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="../CSS/myprofile.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -303,7 +303,16 @@
                     <?php foreach ($projects as $project): ?>
                         <div class="col-lg-4 col-md-6 mb-4  ">
                             <div class="shadow-sm border-0 rounded" style="width: 600px;background-color:#2f2f30;margin-bottom: 30px;">
+                                <div class="delete-post">
+                                    <form action="myprofile.php" method="POST">
+                                        <input type="hidden" name="usn" value="<?php echo $project['usn'];?>">
+                                        <input type="hidden" name="time" value="<?php echo $project['uploded_time'];?>">
+                                        <i class="fas fa-trash-alt"  style="color: red;padding: 0" > </i>
+                                        <input type="submit" name="delete" value="Delete" class="btn z-depth-0" style="color: white;padding: 0">
+                                    </form>
+                                </div>
                                 <div class="card-body">
+
                                     <!--                        <div class="my-user-profile-class float-left">-->
                                     <!--                            <img src="https://images.unsplash.com/photo-1495603889488-42d1d66e5523?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=130&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=130" class="" height="40" width="40" style="border-radius: 20px;margin-right: 10px"/>-->
                                     <!--                        </div>-->
@@ -313,6 +322,7 @@
                                     <div class="my-user-profile-class float-left">
                                         <img src="<?php echo $project['profile_picture'];?>" class="" height="40" width="40" style="border-radius: 20px;margin-right: 10px"/>
                                     </div>
+
                                     <div class="user-content">
                                         <h6 class="text-capitalize text-light user-name"><?php echo $project['first_name'];echo " ";echo $project['last_name'];?></h6>
                                         <p class=" text-capitalize text-light small blockquote-footer"><?php echo $project['department']?></p>
@@ -328,13 +338,14 @@
 
                                         </p>
                                         <?php if(!($project['project_link'] == '')){ ?>
-                                            <a href="<?php echo $project['project_link'];?>">Link</a>
+                                            <a href="<?php echo $project['project_link'];?>"><button type="button" class="btn btn-outline-light" style="margin: 4px 0;padding: 5px 35px;color:#B3B8CD;">Link</button></a>
                                         <?php } ?>
-                                        <form action="myprofile.php" method="POST">
-                                            <input type="hidden" name="usn" value="<?php echo $project['usn'];?>">
-                                            <input type="hidden" name="time" value="<?php echo $project['uploded_time'];?>">
-                                            <input type="submit" name="delete" value="Delete" class="btn z-depth-0">
-                                        </form>
+<!--                                        <form action="myprofile.php" method="POST">-->
+<!--                                            <input type="hidden" name="usn" value="--><?php //echo $project['usn'];?><!--">-->
+<!--                                            <input type="hidden" name="time" value="--><?php //echo $project['uploded_time'];?><!--">-->
+<!--                                            <button type="submit" name="delete" value="Delete" class="btn btn-outline-light" style="margin: 4px 0;padding: 5px 25px;color:#B3B8CD;">Delete</button>-->
+<!--                                            <input type="submit" name="delete" value="Delete" class="btn z-depth-0">-->
+<!--                                        </form>-->
                                     </div>
                                 </div>
                             </div>

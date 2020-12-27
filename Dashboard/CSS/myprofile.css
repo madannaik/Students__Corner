@@ -513,3 +513,10 @@ h1:before{
     margin-right: 30px;
 
 }
+
+.delete-post{
+    position: absolute;
+    top: 2%;
+    right: -60%;
+
+}

@@ -124,7 +124,7 @@
         <div class="d-flex flex-column flex-wrap align-items-center ">
             <?php foreach ($projects as $project): ?>
             <div class="col-lg-4 col-md-6 mb-4  ">
-                <div class="shadow-sm border-0 rounded" style="width: 600px;background-color:#2f2f30;margin-bottom: 30px;">
+                <div class="shadow-sm border-0 rounded" style="width: 600px;background-color:#040424;margin-bottom: 30px;">
                     <div class="card-body">
 <!--                        <div class="my-user-profile-class float-left">-->
 <!--                            <img src="https://images.unsplash.com/photo-1495603889488-42d1d66e5523?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=130&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=130" class="" height="40" width="40" style="border-radius: 20px;margin-right: 10px"/>-->
@@ -141,7 +141,8 @@
                             <hr style="width: 300px;height:2px;border:none;background-color:white">
                             <center><h2 class="text-capitalize text-light user-name"><?php echo $project['project_head'];?></h2></center>
                             <div style>
-                                <img src="https://d33wubrfki0l68.cloudfront.net/2475489eaf20163ec0f54ddc1d92aa8d4c87c96b/e7c81/images/docs/components-of-kubernetes.svg" width="500px">
+
+                                <img src="<?php echo $project['project_image'];?>" width="500px">
                             </div>
 <!--                            <div style>-->
 <!--                                <img src="--><?php //echo $project['project_link'];?><!--">-->
@@ -150,7 +151,7 @@
 
                             </p>
                             <?php if(!($project['project_link'] == '')){ ?>
-                                <a href="<?php echo $project['project_link'];?>">Link</a>
+                                <a href="<?php echo $project['project_link'];?>"><button type="button" class="btn btn-outline-light text-dark" style="margin: 4px 0;padding: 5px 25px;color:white: honeydew">Link</button></a>
                             <?php } ?>
                         </div>
                     </div>
