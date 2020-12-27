@@ -84,17 +84,17 @@
 <!--        TODO: increase the text area for project description-->
 <div id="my-overlay" >
     <!--TODO:Increase the width of pop up form-->
-    <div class="my-form-popup" id="myForm">
+    <div class="my-form-popup" id="myForm" style="width: 500px;position: absolute;left: 35%;top: 6%">
         <form action="projectdb.php" class="form-container" method="post">
             <h1>New Post</h1>
 <!--            <h4>--><?php //echo $label?><!--</h4>-->
-            <div class="form-group" style="width: 360px">
+            <div class="form-group" style="width: 410px">
                 <label for="exampleFormControlTextarea1">Project/Article Title</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" name="project_title" required></textarea>
+                <input class="form-control" id="exampleFormControlTextarea1" name="project_title" required>
             </div>
-            <div class="form-group" style="width: 360px">
+            <div class="form-group" style="width: 410px">
                 <label for="exampleFormControlTextarea1">Description</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" name="project_body" required></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" name="project_body" required></textarea>
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label ">Provide link for your Post image</label>
@@ -123,7 +123,7 @@
     <div class="container py-2">
         <div class="d-flex flex-column flex-wrap align-items-center ">
             <?php foreach ($projects as $project): ?>
-            <div class="col-lg-4 col-md-6 mb-4  ">
+            <div class="col-lg-4 col-md-6 mb-4 ">
                 <div class="shadow-sm border-0 rounded" style="width: 600px;background-color:#040424;margin-bottom: 30px;">
                     <div class="card-body">
 <!--                        <div class="my-user-profile-class float-left">-->

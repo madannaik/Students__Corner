@@ -111,9 +111,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/b5cff000aa.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="../CSS/myprofile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/myprofile.css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
     <title>Profile Card</title>
@@ -244,10 +245,18 @@
 <!-- TODO: coustamise delete button -->
         <section id="cards">
             <div class="container py-2">
-                <div class="d-flex flex-column flex-wrap align-items-center ">
+                <div class="d-flex flex-column flex-wrap align-items-center" >
                     <?php foreach ($my_announcements as $my_announcement) : ?>
-                        <div class="col-lg-4 col-md-6 mb-4  ">
-                            <div class="shadow-sm border-0 rounded" style="width: 600px;background-color: #2f2f30;">
+                        <div class="col-lg-4 col-md-6 mb-4 " >
+                            <div class="shadow-sm border-0 rounded" style="width: 600px;background-color: #2f2f30;margin-bottom: 30px;margin-left: -50px">
+                                <div class="delete-post">
+                                    <form action="myprofile.php" method="POST">
+                                        <input type="hidden" name="teacher_id" value="<?php echo $my_announcement['teacher_id'];?>">
+                                        <input type="hidden" name="time" value="<?php echo $my_announcement['uploaded_time'];?>">
+                                        <i class="fas fa-trash-alt"  style="color: red;padding: 0" > </i>
+                                        <input type="submit" name="delete" value="Delete" class="btn z-depth-0" style="color: white">
+                                    </form>
+                                </div>
                                 <div class="card-body">
                                     <div class="my-user-profile-class float-left">
                                         <!--                               --><?php //echo $announcement['profile_picture']?>
@@ -274,13 +283,13 @@
                                         <p class="text-light mb-0 fs-1 text" ><?php echo $my_announcement['body'];?></p>
                                     </div>
                                     <?php if(!($my_announcement['announcement_link'] == '')){ ?>
-                                        <a href="<?php echo $my_announcement['announcement_link'];?>">Link</a>
+                                        <a href="<?php echo $my_announcement['announcement_link'];?>"><button type="button" class="btn btn-outline-light" style="margin: 10px 0;padding: 5px 35px;color:#B3B8CD;">Link</button></a>
                                     <?php } ?>
-                                    <form action="myprofile.php" method="POST">
-                                        <input type="hidden" name="teacher_id" value="<?php echo $my_announcement['teacher_id'];?>">
-                                        <input type="hidden" name="time" value="<?php echo $my_announcement['uploaded_time'];?>">
-                                        <input type="submit" name="delete" value="Delete" class="btn z-depth-0">
-                                    </form>
+<!--                                    <form action="myprofile.php" method="POST">-->
+<!--                                        <input type="hidden" name="teacher_id" value="--><?php //echo $my_announcement['teacher_id'];?><!--">-->
+<!--                                        <input type="hidden" name="time" value="--><?php //echo $my_announcement['uploaded_time'];?><!--">-->
+<!--                                        <input type="submit" name="delete" value="Delete" class="btn z-depth-0">-->
+<!--                                    </form>-->
 
                                 </div>
                             </div>
@@ -301,8 +310,8 @@
             <div class="container py-2">
                 <div class="d-flex flex-column flex-wrap align-items-center ">
                     <?php foreach ($projects as $project): ?>
-                        <div class="col-lg-4 col-md-6 mb-4  ">
-                            <div class="shadow-sm border-0 rounded" style="width: 600px;background-color:#2f2f30;margin-bottom: 30px;">
+                        <div class="col-lg-4 col-md-6 mb-4  ms-4">
+                            <div class="shadow-sm border-0 rounded" style="width: 600px;background-color:#2f2f30;margin-bottom: 30px;margin-left: -50px">
                                 <div class="delete-post">
                                     <form action="myprofile.php" method="POST">
                                         <input type="hidden" name="usn" value="<?php echo $project['usn'];?>">

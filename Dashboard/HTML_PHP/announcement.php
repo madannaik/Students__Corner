@@ -80,20 +80,20 @@
     <!--TODO: Bring the popup form in the center-->
 <!--    TODO:    change the color of the post button if possible-->
 <!--        TODO: increase the text area for announcement-->
-    <div class="my-form-popup" id="myForm">
+    <div class="my-form-popup" id="myForm" style="positon:absolute;top:5%;left:35%">
         <form action="announcementdb.php" class="form-container" method="POST">
             <h1>New Announcement</h1>
 <!--            <div class="form-group" style="width: 360px" >-->
 <!--                <label for="exampleFormControlTextarea1" >Title</label>-->
 <!--                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" name="title" required></textarea>-->
 <!--            </div>-->
-            <div class="form-group" style="width: 360px" >
+            <div class="form-group" style="width: 410px" >
                 <label for="exampleFormControlTextarea1">Announcement</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="body" required></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="body" required></textarea>
             </div>
-            <div class="form-group" style="width: 360px" >
+            <div class="form-group" style="width: 410px" >
                 <label for="exampleFormControlTextarea1">Link if any</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" name="announcement_link" placeholder="null"></textarea>
+                <input class="form-control" id="exampleFormControlTextarea1"  name="announcement_link" placeholder="null">
             </div>
             <div class="form-group" >
                 <label for="inputState">Choose Department</label>
