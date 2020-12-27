@@ -240,6 +240,8 @@
             <center><h1>No announcements yet!!</h1></center>
         <?php }else{  ?>
 <!--this is for Lecture announcement-->
+<!-- TODO: put a button to the link -->
+<!-- TODO: coustamise delete button -->
         <section id="cards">
             <div class="container py-2">
                 <div class="d-flex flex-column flex-wrap align-items-center ">
