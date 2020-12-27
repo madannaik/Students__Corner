@@ -140,9 +140,10 @@
                     <div class="main">
     <!--                    code which was here before-->
                         <div class="image">
-                            <div class="hover">
-                                <i class="fas fa-camera fa-2x"></i>
-                            </div>
+                            <img src="<?php echo $teacher_info['profile_picture'];?>" alt="" width="110px" height="110px" style="border-radius: 110px">
+<!--                            <div class="hover">-->
+<!--                                <i class="fas fa-camera fa-2x"></i>-->
+<!--                            </div>-->
                         </div>
     <!--                    code which i inserted-->
     <!--                    <div>-->
@@ -191,9 +192,10 @@
                 <div class="main">
                     <!--                    code which was here before-->
                     <div class="image">
-                        <div class="hover">
-                            <i class="fas fa-camera fa-2x"></i>
-                        </div>
+                        <img src="<?php echo $student_info['profile_picture'];?>" alt="" width="110px" height="110px" style="border-radius: 110px">
+<!--                        <div class="hover">-->
+<!--                            <i class="fas fa-camera fa-2x"></i>-->
+<!--                        </div>-->
                     </div>
                     <!--                    code which i inserted-->
                     <!--                    <div>-->
@@ -253,8 +255,8 @@
                                     <form action="myprofile.php" method="POST">
                                         <input type="hidden" name="teacher_id" value="<?php echo $my_announcement['teacher_id'];?>">
                                         <input type="hidden" name="time" value="<?php echo $my_announcement['uploaded_time'];?>">
-                                        <i class="fas fa-trash-alt"  style="color: red;padding: 0" > </i>
-                                        <input type="submit" name="delete" value="Delete" class="btn z-depth-0" style="color: white">
+                                        <i class="fas fa-trash-alt"  style="color: red;padding:0;margin: 0" > </i>
+                                        <input type="submit" name="delete" value="Delete" class="btn z-depth-0" style="color: white;padding: 0;margin: 0;">
                                     </form>
                                 </div>
                                 <div class="card-body">

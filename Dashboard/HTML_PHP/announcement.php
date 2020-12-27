@@ -80,7 +80,7 @@
     <!--TODO: Bring the popup form in the center-->
 <!--    TODO:    change the color of the post button if possible-->
 <!--        TODO: increase the text area for announcement-->
-    <div class="my-form-popup" id="myForm" style="positon:absolute;top:5%;left:35%">
+    <div class="my-form-popup" id="myForm" style="position: absolute;top: 5%;left: 35%">
         <form action="announcementdb.php" class="form-container" method="POST">
             <h1>New Announcement</h1>
 <!--            <div class="form-group" style="width: 360px" >-->
@@ -148,15 +148,16 @@
 
 
 
-<!--TODO: change the color of the card(a bit bluish dark)-->
+
 <!--This is code is for Announcement Card-->
-<!-- TODO: put a button to the link -->
+<!--    TODO: put a button to the link -->
     <section id="cards">
         <div class="container py-2">
             <div class="d-flex flex-column flex-wrap align-items-center ">
                 <?php foreach ($announcements as $announcement) : ?>
                 <div class="col-lg-4 col-md-6 mb-4  ">
-                    <div class="shadow-sm border-0 rounded" style="width: 600px;background-color: #2f2f30;">
+                    <div class="shadow-sm border-0 rounded" style="width: 600px;background-color: #040424;">
+<!--                        #2f2f30-->
                         <div class="card-body">
                             <div class="my-user-profile-class float-left">
 <!--                               --><?php //echo $announcement['profile_picture']?>
@@ -183,7 +184,8 @@
                                 <p class="text-light mb-0 fs-1 text" ><?php echo $announcement['body'];?></p>
                             </div>
                             <?php if(!($announcement['announcement_link'] == '')){ ?>
-                                 <a href="<?php echo $announcement['announcement_link'];?>">Link</a>
+
+                                 <a href="<?php echo $announcement['announcement_link'];?>"><button type="button" class="btn btn-outline-light text-dark" style="margin: 4px 0;padding: 5px 25px">Link</button></a>
                             <?php } ?>
                             <form action="">
 
