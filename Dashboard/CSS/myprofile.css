@@ -124,7 +124,7 @@ body{
     width: 110px;
     height: 110px;
     border-radius: 50%;
-    background: url('img/profile.jpg') no-repeat center / cover;
+    background: no-repeat center / cover;
     border: 4px solid #00d8fe;
     margin-bottom: 2px;
     overflow: hidden;
@@ -463,7 +463,7 @@ hr.line::after{
 
 
 
-h1{
+h1 {
     font-family: sans-serif;
     margin: 50px auto;
     /* text-align: center; */
@@ -472,7 +472,7 @@ h1{
     position:relative;
     margin-left: 405px;
     }
-    h1:before{
+h1:before{
     content: "";
     display:block;
     width: 120px;

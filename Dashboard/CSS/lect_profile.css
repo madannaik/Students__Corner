@@ -125,3 +125,42 @@ footer {
     text-align: center;
     z-index: 999;
 }
+h1{
+    font-family: sans-serif;
+    margin: 50px auto;
+    /* text-align: center; */
+    font-size: 40px;
+    max-width: 600px;
+    position:relative;
+    margin-left: 405px;
+}
+h1:before{
+    content: "";
+    display:block;
+    width: 120px;
+    height:2px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: -2;
+}
+h1:after{
+    content: "";
+    display:block;
+    width: 120px;
+    height:2px;
+    background: #000;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: -2;
+}
+span{
+    background: #fff
+}
+
+.myposts h1{
+    font-family: 'Arvo', serif;
+    color: #10181D;
+}

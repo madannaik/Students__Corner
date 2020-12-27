@@ -53,14 +53,6 @@
 //    get all announcement from db and store it as an array
     $announcements = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
-//    $announ_final = '';
-//    foreach ($announcements as $announ){
-//        if($announ['semester'] == 'All' && $announ['sections'] == 'All' && $announ['department'] == 'All'){
-//            $announ_final == 'For All';
-//        }else{
-//
-//        }
-//}
 ?>
 
 
@@ -85,6 +77,9 @@
     <!--This code is about announcement pop up-->
     <div id="my-overlay" >
     <!--TODO:Increase the width of pop up form-->
+    <!--TODO: Bring the popup form in the center-->
+<!--    TODO:    change the color of the post button if possible-->
+<!--        TODO: increase the text area for announcement-->
     <div class="my-form-popup" id="myForm">
         <form action="announcementdb.php" class="form-container" method="POST">
             <h1>New Announcement</h1>
@@ -98,7 +93,7 @@
             </div>
             <div class="form-group" style="width: 360px" >
                 <label for="exampleFormControlTextarea1">Link if any</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" name="announcement_link"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" name="announcement_link" placeholder="null"></textarea>
             </div>
             <div class="form-group" >
                 <label for="inputState">Choose Department</label>
@@ -153,7 +148,7 @@
 
 
 
-
+<!--TODO: change the color of the card(a bit bluish dark)-->
 <!--This is code is for Announcement Card-->
     <section id="cards">
         <div class="container py-2">
@@ -186,10 +181,12 @@
                                 <hr style="width: 300px;height:2px;border:none;background-color:white">
                                 <p class="text-light mb-0 fs-1 text" ><?php echo $announcement['body'];?></p>
                             </div>
-                            <?php
-                            if (isset($announcement['announcement_link'])){ ?>
-                                <a href="<?php echo $announcement['announcement_link']; ?>">Link</a>
+                            <?php if(!($announcement['announcement_link'] == '')){ ?>
+                                 <a href="<?php echo $announcement['announcement_link'];?>">Link</a>
                             <?php } ?>
+                            <form action="">
+
+                            </form>
 
                         </div>
                     </div>

@@ -78,6 +78,10 @@
 
 <!--<center><h1>--><?php //echo $label; echo $email; ?><!--</h1></center>-->
 <!--This code is about announcement pop up-->
+<!--TODO:Increase the width of pop up form-->
+<!--TODO: Bring the popup form in the center-->
+<!--    TODO:    change the color of the post button if possible-->
+<!--        TODO: increase the text area for project description-->
 <div id="my-overlay" >
     <!--TODO:Increase the width of pop up form-->
     <div class="my-form-popup" id="myForm">
@@ -98,7 +102,7 @@
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Provide link for source code if any</label>
-                <input type="url" class="form-control" id="exampleFormControlInput1" placeholder="https://yoururl.com" name="project_link" required>
+                <input type="url" class="form-control" id="exampleFormControlInput1" placeholder="https://yoururl.com" name="project_link" >
             </div>
              <div class="row">
                 <div class="col">
@@ -117,27 +121,6 @@
 <section id="cards">
     <div class="container py-2">
         <div class="d-flex flex-column flex-wrap align-items-center ">
-<!--            <div class="col-lg-4 col-md-6 mb-4  ">-->
-<!--                <div class="shadow-sm border-0 rounded" style="width: 600px;background-color: #2f2f30;">-->
-<!--                    <div class="card-body">-->
-<!--                        <div class="my-user-profile-class float-left">-->
-<!--                            <img src="https://images.unsplash.com/photo-1495603889488-42d1d66e5523?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=130&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=130" class="" height="40" width="40"style="border-radius: 20px;margin-right: 10px" />-->
-<!--                        </div>-->
-<!---->
-<!--                        <div class="user-content">-->
-<!--                            <h6 class="text-capitalize user-name" style="color: white">Carry Johnshon</h6>-->
-<!--                            <p class=" text-capitalize text-light small blockquote-footer " >Computer Science Department</p>-->
-<!--                            <hr style="width: 300px;height:2px;border:none;background-color:white">-->
-<!--                            <p class="small text-light mb-0 " >Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nemo harum repellendus aut itaque. Temporibus quaerat dolores ut, cupiditate molestiae commodi! Distinctio praesentium, debitis aut minima doloribus earum-->
-<!--                                quia commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, soluta perferendis! Iusto sequi, quae sunt iste voluptate rerum nulla perspiciatis accusantium cupiditate, officia reprehenderit sit, architecto totam quo eius dignissimos! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum animi, dolorum odio error voluptas quis, veritatis quisquam distinctio, molestias eligendi enim ipsam cum pariatur optio! Amet accusamus maxime voluptatem vel.</p>-->
-<!--                            <div style="padding: 0px">-->
-<!--                                <img src="https://platform9.com/wp-content/uploads/2019/05/kubernetes-constructs-concepts-architecture.jpg" width="560px">-->
-<!--                            </div>-->
-<!---->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
             <?php foreach ($projects as $project): ?>
             <div class="col-lg-4 col-md-6 mb-4  ">
                 <div class="shadow-sm border-0 rounded" style="width: 600px;background-color:#2f2f30;margin-bottom: 30px;">
@@ -165,9 +148,8 @@
                             <p class="small text-light mb-0"><?php echo $project['project_body']?>
 
                             </p>
-                            <?php
-                            if (isset($project['project_link'])){ ?>
-                                <a href="<?php echo $project['project_link']; ?>">Link</a>
+                            <?php if(!($project['project_link'] == '')){ ?>
+                                <a href="<?php echo $project['project_link'];?>">Link</a>
                             <?php } ?>
                         </div>
                     </div>

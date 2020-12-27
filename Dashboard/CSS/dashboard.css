@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+/*@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
+
 
 *{
   margin: 0;
@@ -6,8 +8,15 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: 'Josefin Sans', sans-serif;
+  /*font-family: 'Josefin Sans', sans-serif;*/
+  font-family: 'Arvo', serif;
 }
+
+h2{
+  font-family: sans-serif;
+  /*margin: 50px auto;*/
+}
+
 
 body{
    background-color: #f3f5f9;
@@ -145,7 +154,8 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
 .card .card_title {
   text-align: center;
   border-radius: 0px 0px 40px 40px;
-  font-family: sans-serif;
+  /*font-family: sans-serif;*/
+  font-family: 'Arvo', serif;
   font-weight: bold;
   font-size: 30px;
   margin-top: -80px;

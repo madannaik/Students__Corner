@@ -27,14 +27,15 @@
         $result = mysqli_query($conn, $s);
 
 //        storing it in the form of array
-        $teacher_info = mysqli_fetch_assoc($result);
+        global $teacher_info;
+         $teacher_info = mysqli_fetch_assoc($result);
 
 //        free the memory after use and close connection
         mysqli_free_result($result);
 //        mysqli_close($conn);
 
 //        printing just to check if its working
-//        print_r($teacher_info);
+        print_r($teacher_info);
 //        echo $label;
 
     }else{
