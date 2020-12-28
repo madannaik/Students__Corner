@@ -20,7 +20,8 @@
 .my-form-popup{
     position: absolute;
     left: 35%;
-    top: 5%;
+    top: 15%;
+
 }
 .form-container {
     max-width: 500px;
@@ -30,8 +31,24 @@
     -webkit-box-shadow: -1px -1px 10px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    -1px -1px 10px 0px rgba(50, 50, 50, 0.75);
     box-shadow:         -1px -1px 10px 0px rgba(50, 50, 50, 0.75);
-}
+  
 
+}
+/*.form-container::-webkit-scrollbar{*/
+/*    width: 10px;*/
+
+
+/*}*/
+/*.form-container::-webkit-scrollbar-track {*/
+/*    background: #f1f1f1;*/
+/*}*/
+
+/*.form-container::-webkit-scrollbar-thumb{*/
+/*    background: #000;*/
+/*}*/
+/*.form-container::-webkit-scrollbar-thumb:hover {*/
+/*    background: #555;*/
+/*}*/
 /* Full-width input fields */
 .form-container input[type=text], .form-container input[type=password] {
     width: 100%;
@@ -106,6 +123,33 @@
     background:#0175c2;
     color:white;
 }
+.my-filter-pop-up-button{
+    position: fixed;
+    left: 93%;
+    bottom:-30%;
+    background-color: #10181d;
+    z-index: 99;
+    width:60px;
+    height:60px;
+    line-height:30px;
+    text-align:center;
+    color:#FFEA53;
+    margin:200px auto;
+    border-radius:45px;
+    border:1px solid #FFEA53;
+    cursor:pointer;
+    font-weight:bold;
+}
+.my-filter-pop-up-button:hover{
+    background:#0175c2;
+    color:white;
+}
 img{
     border: none;
+}
+
+.my-filter-popup{
+    position: absolute;
+    top: 44%;
+    right: 10px;
 }

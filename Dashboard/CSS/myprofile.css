@@ -123,14 +123,16 @@ body{
     position: relative;
     width: 110px;
     height: 110px;
-    border-radius: 50%;
+    border-radius: 100%;
     background: no-repeat center / cover;
-    border: 4px solid #00d8fe;
-    margin-bottom: 2px;
+    border: 1px solid #00d8fe;
+    margin: 2px;
     overflow: hidden;
     cursor: pointer;
 }
-
+.main .image img{
+    border-radius:110px ;
+}
 
 /*.image .hover{*/
 /*    position: absolute;*/

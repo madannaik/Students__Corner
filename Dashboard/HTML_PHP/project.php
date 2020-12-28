@@ -88,11 +88,11 @@
         <form action="projectdb.php" class="form-container" method="post">
             <h1>New Post</h1>
 <!--            <h4>--><?php //echo $label?><!--</h4>-->
-            <div class="form-group" style="width: 410px">
+            <div class="mb-3" >
                 <label for="exampleFormControlTextarea1">Project/Article Title</label>
                 <input class="form-control" id="exampleFormControlTextarea1" name="project_title" required>
             </div>
-            <div class="form-group" style="width: 410px">
+            <div class="mb-3">
                 <label for="exampleFormControlTextarea1">Description</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" name="project_body" required></textarea>
             </div>

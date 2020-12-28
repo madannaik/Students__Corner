@@ -80,7 +80,7 @@
     <!--TODO: Bring the popup form in the center-->
 <!--    TODO:    change the color of the post button if possible-->
 <!--        TODO: increase the text area for announcement-->
-    <div class="my-form-popup" id="myForm" style="position: absolute;top: 5%;left: 35%">
+    <div class="my-form-popup" id="myForm" >
         <form action="announcementdb.php" class="form-container" method="POST">
             <h1>New Announcement</h1>
 <!--            <div class="form-group" style="width: 360px" >-->
@@ -145,6 +145,63 @@
 
 
 <?php } ?>
+<!--This code is for filter botton-->
+
+    <div id="my-overlay">
+        <div class="my-filter-popup" id="myFilterForm">
+            <form action="" class="form-container" method="POST">
+
+                <!--            <div class="form-group" style="width: 360px" >-->
+                <!--                <label for="exampleFormControlTextarea1" >Title</label>-->
+                <!--                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" name="title" required></textarea>-->
+                <!--            </div>-->
+                <div class="form-group" >
+                    <label for="inputState">Choose Department</label>
+                    <select id="inputState" class="form-control" name="department" required>
+                        <option selected>All</option>
+                        <option>Computer Science</option>
+                        <option>Electronic and Communication</option>
+                        <option>Electronics and Electrical</option>
+                        <option>Mechanical Engineering</option>
+                        <option>Information Science</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6" >
+                        <label for="inputState" >Semester</label>
+                        <select id="inputState" class="form-control" name="semester" required>
+                            <option selected>All</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputState">Section</label>
+                        <select id="inputState" class="form-control" name="sections" required>
+                            <option selected>All</option>
+                            <option>A</option>
+                            <option>B</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button onclick="off()" type="button" class="btn btn-primary btn-sm bg-dark" style="background-color: #181717">Cancel</button>
+                    </div>
+                    <div class="col">
+                        <button type="submit" class="btn btn-primary btn-sm bg">Filter</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 
 
 
@@ -198,9 +255,11 @@
             </div>
         </div>
     </section>
-
-
-
+<?php if ($label == 'student'){ ?>
+<div class="my-filter-pop-up-button" onclick="on()">
+    <i class="fas fa-filter " style="padding-top: 20px;"></i>
+</div>
+<?php } ?>
 <?php if ($label == 'teacher'){ ?>
 <!--this code is for Floating button for pop up form -->
     <div class="my-pop-up-button" onclick="on()">
@@ -218,6 +277,8 @@
         document.getElementById("my-overlay").style.display = "none";
         // document.getElementById("my-body").style.overflow = "scroll";
     }
+
+
 </script>
 </body>
 
