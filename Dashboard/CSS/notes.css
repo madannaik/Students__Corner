@@ -16,8 +16,10 @@ p{
     max-width:80%;
     margin-left: 300px;
     position:relative;
+
 }
 .folder-wrap{
+    padding: 20px;
     display: flex;
     flex-wrap:wrap;
 }

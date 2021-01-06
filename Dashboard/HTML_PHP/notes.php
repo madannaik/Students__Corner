@@ -18,9 +18,9 @@
 
 <body>
 
-<button class="back">
-    <i class="mdi mdi-arrow-left"></i>
-</button>
+<!--<button class="back">-->
+<!--    <i class="mdi mdi-arrow-left"></i>-->
+<!--</button>-->
 
 
 <div class="stage">
@@ -30,7 +30,7 @@
         <div class="tile folder">
             <i class="fas fa-folder"></i>
             <h3>Folder namee</h3>
-            <p>Something  something something something something</p>
+            <p>Something </p>
         </div><!-- .tile.folder -->
 
         <div class="tile folder">
@@ -76,146 +76,12 @@
         </div><!-- .tile.form -->
 
     </div><!-- .folder-wrap -->
-    <div class="folder-wrap level-down">
 
-        <div class="tile folder">
-            <i class="mdi mdi-folder"></i>
-            <h3>Folder name</h3>
-            <p>Something something</p>
-        </div><!-- .tile.folder -->
-
-        <div class="tile folder">
-            <i class="mdi mdi-folder"></i>
-            <h3>Folder name</h3>
-            <p>Something something</p>
-        </div><!-- .tile.folder -->
-
-        <div class="tile folder">
-            <i class="mdi mdi-folder"></i>
-            <h3>Folder name</h3>
-            <p>Something something</p>
-        </div><!-- .tile.folder -->
-
-        <div class="tile form">
-            <i class="mdi mdi-file-document"></i>
-            <h3>Form name</h3>
-            <p>Something something</p>
-        </div><!-- .tile.form -->
-
-        <div class="tile form">
-            <i class="mdi mdi-file-document"></i>
-            <h3>Form name</h3>
-            <p>Something something</p>
-        </div><!-- .tile.form -->
-
-        <div class="tile form">
-            <i class="mdi mdi-file-document"></i>
-            <h3>Form name</h3>
-            <p>Something something</p>
-        </div><!-- .tile.form -->
-
-    </div><!-- .folder-wrap -->
-    <div class="folder-wrap">
-
-        <div class="tile folder">
-            <i class="mdi mdi-folder"></i>
-            <h3>Folder name</h3>
-            <p>Something something</p>
-        </div><!-- .tile.folder -->
-
-        <div class="tile folder">
-            <i class="mdi mdi-folder"></i>
-            <h3>Folder name</h3>
-            <p>Something something</p>
-        </div><!-- .tile.folder -->
-
-        <div class="tile form">
-            <i class="mdi mdi-file-document"></i>
-            <h3>Form name</h3>
-            <p>Something something</p>
-        </div><!-- .tile.form -->
-
-        <div class="tile form">
-            <i class="mdi mdi-file-document"></i>
-            <h3>Form name</h3>
-            <p>Something something</p>
-        </div><!-- .tile.form -->
-
-    </div><!-- .folder-wrap -->
-    <div class="folder-wrap">
-
-        <div class="tile folder">
-            <i class="mdi mdi-folder"></i>
-            <h3>Folder name</h3>
-            <p>Something something</p>
-        </div><!-- .tile.folder -->
-
-        <div class="tile folder">
-            <i class="mdi mdi-folder"></i>
-            <h3>Folder name</h3>
-            <p>Something something</p>
-        </div><!-- .tile.folder -->
-
-        <div class="tile folder">
-            <i class="mdi mdi-folder"></i>
-            <h3>Folder name</h3>
-            <p>Something something</p>
-        </div><!-- .tile.folder -->
-
-        <div class="tile form">
-            <i class="mdi mdi-file-document"></i>
-            <h3>Form name</h3>
-            <p>Something something</p>
-        </div><!-- .tile.form -->
-
-        <div class="tile form">
-            <i class="mdi mdi-file-document"></i>
-            <h3>Form name</h3>
-            <p>Something something</p>
-        </div><!-- .tile.form -->
-
-        <div class="tile form">
-            <i class="mdi mdi-file-document"></i>
-            <h3>Form name</h3>
-            <p>Something something</p>
-        </div><!-- .tile.form -->
-
-    </div><!-- .folder-wrap -->
-    <div class="folder-wrap">
-
-        <div class="tile folder">
-            <i class="mdi mdi-folder"></i>
-            <h3>Folder name</h3>
-            <p>Something something</p>
-        </div><!-- .tile.folder -->
-
-        <div class="tile form">
-            <i class="mdi mdi-file-document"></i>
-            <h3>Form name</h3>
-            <p>Something something</p>
-        </div><!-- .tile.form -->
-
-        <div class="tile form">
-            <i class="mdi mdi-file-document"></i>
-            <h3>Form name</h3>
-            <p>Something something</p>
-        </div><!-- .tile.form -->
-
-    </div><!-- .folder-wrap -->
-    <div class="folder-wrap">
-
-        <div class="tile form">
-            <i class="mdi mdi-file-document"></i>
-            <h3>Form name</h3>
-            <p>Something something</p>
-        </div><!-- .tile.form -->
-
-    </div><!-- .folder-wrap -->
 
 
 
 </div><!-- .stage -->
-<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<!--<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>-->
 <script src="../JS/notesSelect.js"></script>
 
 
@@ -223,3 +89,7 @@
 
 </html>
 <!--TODO:department,semester,subject_code,module_no,filename,comments-->
+
+
+
+
