@@ -18,30 +18,33 @@ p{
     position:relative;
 
 }
-.folder-wrap{
+.stage .folder-wrap{
     padding: 20px;
     display: flex;
     flex-wrap:wrap;
+    flex-direction:row;
+    justify-content: center;
+    box-sizing: border-box;
 }
-.folder-wrap::before{
-    content:'Folder name';
-    display: block;
-    position: absolute;
-    top:-40px;
-}
-.folder-wrap:first-child::before{
-    content:'Home (top of file structure)';
-    display: block;
-    position: absolute;
-    top:-40px;
-}
-.tile{
+/*.folder-wrap::before{*/
+/*    content:'Folder name';*/
+/*    display: block;*/
+/*    position: absolute;*/
+/*    top:-40px;*/
+/*}*/
+/*.folder-wrap:first-child::before{*/
+/*    content:'Home (top of file structure)';*/
+/*    display: block;*/
+/*    position: absolute;*/
+/*    top:-40px;*/
+/*}*/
+ .tile{
     border-radius: 3px;
     width: calc(20% - 17px);
     margin-bottom: 23px;
     text-align: center;
     border: 1px solid #eeeeee;
-    transition: 0.2s all cubic-bezier(0.4, 0.0, 0.2, 1);
+
     position: relative;
     padding: 35px 16px 25px;
     margin-right: 17px;
@@ -63,40 +66,55 @@ p{
     color:#8fd9ff;
 }
 
-.back{
-    font-size: 26px;
-    border-radius: 50px;
-    background: #00a8ff;
-    border: 0;
-    color: white;
-    width: 60px;
-    height: 60px;
-    margin: 10px 20px 0 210px;
-    outline:none;
-    cursor:pointer;
-}
+/*.back{*/
+/*    font-size: 26px;*/
+/*    border-radius: 50px;*/
+/*    background: #00a8ff;*/
+/*    border: 0;*/
+/*    color: white;*/
+/*    width: 60px;*/
+/*    height: 60px;*/
+/*    margin: 10px 20px 0 210px;*/
+/*    outline:none;*/
+/*    cursor:pointer;*/
+/*}*/
 
-/* Transitioning */
-.folder-wrap{
+/*!* Transitioning *!*/
+/*.folder-wrap{*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    transition: .365s all cubic-bezier(.4,0,.2,1);*/
+/*    pointer-events: none;*/
+/*    opacity: 0;*/
+/*    top: 0;*/
+/*}*/
+/*.folder-wrap.level-up{*/
+/*    transform: scale(1.2);*/
+
+/*}*/
+/*.folder-wrap.level-current{*/
+/*    transform: scale(1);*/
+/*    pointer-events:all;*/
+/*    opacity:1;*/
+/*    position:relative;*/
+/*    height: auto;*/
+/*    overflow: visible;*/
+/*}*/
+/*.folder-wrap.level-down{*/
+/*    transform: scale(0.8);*/
+/*}*/
+.main-notes-sec{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-notes-sec .computer-science-dept{
     position: absolute;
-    width: 100%;
-    transition: .365s all cubic-bezier(.4,0,.2,1);
-    pointer-events: none;
-    opacity: 0;
-    top: 0;
-}
-.folder-wrap.level-up{
-    transform: scale(1.2);
-
-}
-.folder-wrap.level-current{
-    transform: scale(1);
-    pointer-events:all;
-    opacity:1;
-    position:relative;
-    height: auto;
-    overflow: visible;
-}
-.folder-wrap.level-down{
-    transform: scale(0.8);
+    width: 60vw;
+    height: 40vh;
+    background-color:crimson ;
+    border-radius: 35px;
 }
