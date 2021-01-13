@@ -59,6 +59,22 @@
 //    get all announcement from db and store it as an array
     $announcements = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
+    if(isset($_POST['filter'])){
+        // echo "hellooooooooooooooooooooooooooooooooo";
+        $filter_department = $_POST['department_filter'];
+        $filter_semester = $_POST['semester_filter'];
+        $filter_section = $_POST['sections_filter'];
+        $filter_query = "SELECT announcement.department_announcement,announcement.semester,announcement.sections,announcement.body,announcement.uploaded_time,announcement.announcement_link, announcement.teacher_id,teacher.first_name,teacher.last_name,teacher.department, teacher.profile_picture FROM announcement JOIN teacher ON announcement.teacher_id = teacher.teacher_id WHERE announcement.department_announcement = '$filter_department' && announcement.sections = '$filter_section' && announcement.semester = '$filter_semester' ORDER BY uploaded_time DESC";
+        $result = mysqli_query($conn,$filter_query);
+        $filtered_announcements = mysqli_fetch_all($result, MYSQLI_ASSOC);
+        $announcements = $filtered_announcements;
+    }else{
+        $announcements = $announcements;
+    }
+
+    $filtered_announcements = [];
+    $announcement = [];
+
 ?>
 
 
@@ -214,6 +230,9 @@
 
 <!--This is code is for Announcement Card-->
 <!--    TODO: put a button to the link -->
+<?php if(count($filtered_announcements) == 0 && count($announcements) == 0) { ?>
+    <center><h1>hatr hatr</h1></center>
+<?php } else { ?>
     <section id="cards">
         <div class="container py-2">
             <div class="d-flex flex-column flex-wrap align-items-center ">
@@ -261,6 +280,7 @@
             </div>
         </div>
     </section>
+<?php } ?>
 <?php if ($label == 'student'){ ?>
 <div class="my-filter-pop-up-button" onclick="on()">
     <i class="fas fa-filter " style="padding-top: 20px;"></i>

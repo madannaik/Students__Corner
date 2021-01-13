@@ -62,6 +62,7 @@
         $s = "SELECT projects.uploded_time, projects.project_head, projects.project_body, projects.project_link,projects.project_image,projects.usn, student.first_name, student.last_name, student.department, student.semester, student.sections, student.profile_picture FROM projects JOIN student on projects.usn = student.usn ORDER BY uploded_time DESC ";
         $result = mysqli_query($conn,$s);
         $projects = mysqli_fetch_all($result, MYSQLI_ASSOC);
+        $project_count = count($projects);
 //        print_r($projects);
     }
 
@@ -176,7 +177,7 @@
                         <div class="right">
 
                         <div>
-                            <h3>10</h3>
+                            <h3><?php echo $project_count; ?></h3>
                             <h3 class="number-title">Announcements</h3>
                         </div>
 
@@ -227,7 +228,7 @@
                 </div>
                 <div class="right">
                         <div>
-                            <h3 class="number">91</h3>
+                            <h3 class="number"><?php echo $project_count; ?></h3>
                             <h3 class="number-title">Posts</h3>
                         </div>
 
