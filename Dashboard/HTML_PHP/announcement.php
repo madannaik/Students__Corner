@@ -47,7 +47,7 @@
         mysqli_free_result($result);
         $student_department = $student_info['department'];
         $student_semester = $student_info['semester'];
-        $s = "SELECT announcement.department_announcement,announcement.semester,announcement.sections,announcement.body,announcement.uploaded_time,announcement.announcement_link, announcement.teacher_id,teacher.first_name,teacher.last_name,teacher.department, teacher.profile_picture FROM announcement JOIN teacher ON announcement.teacher_id = teacher.teacher_id WHERE announcement.department_announcement = '$student_department' && announcement.semester = '$student_semester' ORDER BY uploaded_time DESC";
+        $s = "SELECT announcement.department_announcement,announcement.semester,announcement.sections,announcement.body,announcement.uploaded_time,announcement.announcement_link, announcement.teacher_id,teacher.first_name,teacher.last_name,teacher.department, teacher.profile_picture FROM announcement JOIN teacher ON announcement.teacher_id = teacher.teacher_id WHERE announcement.department_announcement = '$student_department' || announcement.department_announcement = 'All' && announcement.semester = '$student_semester' ORDER BY uploaded_time DESC";
       }
 
 
