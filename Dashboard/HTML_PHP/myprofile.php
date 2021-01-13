@@ -307,6 +307,12 @@
     <div class="myposts">
         <center><h1>My Posts</h1></center>
     </div>
+        <?php
+        $student_usn = $student_info['usn'];
+        $s = "SELECT projects.uploded_time, projects.project_head, projects.project_body, projects.project_link,projects.project_image,projects.usn, student.first_name, student.last_name, student.department, student.semester, student.sections, student.profile_picture FROM projects JOIN student on projects.usn = student.usn WHERE projects.usn = '$student_usn' ORDER BY uploded_time DESC ";
+        $result = mysqli_query($conn,$s);
+        $projects = mysqli_fetch_all($result, MYSQLI_ASSOC);
+        ?>
 <!--    this section is for Student posted articles-->
         <section id="cards">
             <div class="container py-2">
@@ -340,7 +346,7 @@
                                         <hr style="width: 300px;height:2px;border:none;background-color:white">
                                         <center><h2 class="text-capitalize text-light user-name"><?php echo $project['project_head'];?></h2></center>
                                         <div style>
-                                            <img src="https://d33wubrfki0l68.cloudfront.net/2475489eaf20163ec0f54ddc1d92aa8d4c87c96b/e7c81/images/docs/components-of-kubernetes.svg" width="500px">
+                                            <img src="<?php echo $project['project_image'];?>" width="500px">
                                         </div>
                                         <!--                            <div style>-->
                                         <!--                                <img src="--><?php //echo $project['project_link'];?><!--">-->

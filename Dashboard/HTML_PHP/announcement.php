@@ -34,6 +34,8 @@
 
     //        free the memory after use and close connection
         mysqli_free_result($result);
+        $teacher_department = $teacher_info['department'];
+        $s = "SELECT announcement.department_announcement,announcement.semester,announcement.sections,announcement.body,announcement.uploaded_time,announcement.announcement_link, announcement.teacher_id,teacher.first_name,teacher.last_name,teacher.department, teacher.profile_picture FROM announcement JOIN teacher ON announcement.teacher_id = teacher.teacher_id  ORDER BY uploaded_time DESC";
     }else{
         if(!isset($_SESSION['email'])){
             header('location: ../login&registration/LectureSignIn&UP/loginstudent.php');
@@ -43,10 +45,14 @@
         $result = mysqli_query($conn, $s);
         $student_info = mysqli_fetch_assoc($result);
         mysqli_free_result($result);
+        $student_department = $student_info['department'];
+        $student_semester = $student_info['semester'];
+        $s = "SELECT announcement.department_announcement,announcement.semester,announcement.sections,announcement.body,announcement.uploaded_time,announcement.announcement_link, announcement.teacher_id,teacher.first_name,teacher.last_name,teacher.department, teacher.profile_picture FROM announcement JOIN teacher ON announcement.teacher_id = teacher.teacher_id WHERE announcement.department_announcement = '$student_department' && announcement.semester = '$student_semester' ORDER BY uploaded_time DESC";
       }
 
+
 //    query to get all announcement
-    $s = "SELECT announcement.department_announcement,announcement.semester,announcement.sections,announcement.body,announcement.uploaded_time,announcement.announcement_link, announcement.teacher_id,teacher.first_name,teacher.last_name,teacher.department, teacher.profile_picture FROM announcement JOIN teacher ON announcement.teacher_id = teacher.teacher_id ORDER BY uploaded_time DESC";
+//    $s = "SELECT announcement.department_announcement,announcement.semester,announcement.sections,announcement.body,announcement.uploaded_time,announcement.announcement_link, announcement.teacher_id,teacher.first_name,teacher.last_name,teacher.department, teacher.profile_picture FROM announcement JOIN teacher ON announcement.teacher_id = teacher.teacher_id WHERE announcement.department_announcement = '$student_department' && announcement.semester = '$student_semester' ORDER BY uploaded_time DESC";
 
     $result = mysqli_query($conn,$s);
 
