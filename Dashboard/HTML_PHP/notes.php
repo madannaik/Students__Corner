@@ -14,91 +14,160 @@ include('dashBoard.php');
     <title>Notes</title>
     <link rel="stylesheet" href="../CSS/notes.css">
     <script src="https://kit.fontawesome.com/b5cff000aa.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/d3js/6.3.1/d3.min.js"></script>
+
 </head>
 
 <body>
+<div class="main-flex">
+    <div class="courses-container">
+        <div class="course">
+            <div class="course-preview">
+                <h6>Department</h6>
+                <h2>Computer Science</h2>
+                <a href="#">Last updated <i class="fas fa-chevron-right"></i></a>
+                <h6 style="font-size: 10px">2/10/2021</h6>
+            </div>
+            <div class="course-info">
+<!--                <div class="progress-container">-->
+<!--                    <div class="progress"></div>-->
+<!--                    <span class="progress-text">-->
+<!--					6/9 Challenges-->
+<!--				</span>-->
+<!--                </div>-->
+                <h6>Chapter 4</h6>
+                <h2>Callbacks & Closures</h2>
+                <button class="btn">Continue</button>
+                <div class="selectdiv">
+                    <label>
+                        <select>
+                            <option selected>Select semester </option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>3</option>
+                            <option>3</option>
+                            <option>3</option>
+                            <option>3</option>
+                            <option>3</option>
 
-<!--<button class="back">-->
-<!--    <i class="mdi mdi-arrow-left"></i>-->
-<!--</button>-->
-
-
-<div class="stage">
-
-    <div class="folder-wrap ">
-        <a href="notes_semester.php" style="text-decoration: none">
-            <div class="tile folder">
-                <i class="fas fa-folder"></i>
-                <h3>Folder namee</h3>
-                <p>Something </p>
-            </div><!-- .tile.folder -->
-
-        </a>
-        <a href="notes_semester.php" style="text-decoration: none">
-        <div class="tile folder">
-            <i class="fas fa-folder"></i>
-            <h3>Folder name</h3>
-            <p>Something something</p>
-        </div><!-- .tile.folder -->
-        </a>
-        <a href="notes_semester.php" style="text-decoration: none">
-        <div class="tile folder">
-            <i class="fas fa-folder"></i>
-            <h3>Folder name</h3>
-            <p>Something something</p>
-        </div><!-- .tile.folder -->
-        </a>
-        <a href="notes_semester.php" style="text-decoration: none">
-        <div class="tile folder">
-            <i class="fas fa-folder"></i>
-            <h3>Folder name</h3>
-            <p>Something something</p>
-        </div><!-- .tile.folder -->
-        </a>
-        <a href="notes_semester.php" style="text-decoration: none">
-        <div class="tile form">
-            <i class="fas fa-folder"></i>
-            <h3>Form name</h3>
-            <p>Something something</p>
-        </div><!-- .tile.form -->
-        </a>
-        <a href="notes_semester.php" style="text-decoration: none">
-        <div class="tile form">
-            <i class="fas fa-folder"></i>
-            <h3>Form name</h3>
-            <p>Something something</p>
-        </div><!-- .tile.form -->
-        </a>
-        <a href="notes_semester.php" style="text-decoration: none">
-        <div class="tile form">
-            <i class="fas fa-folder"></i>
-            <h3>Form name</h3>
-            <p>Something something</p>
-        </div><!-- .tile.form -->
-        </a>
-        <a href="notes_semester.php" style="text-decoration: none">
-        <div class="tile form">
-            <i class="fas fa-folder"></i>
-            <h3>Form name</h3>
-            <p>Something something</p>
-        </div><!-- .tile.form -->
-        </a>
-    </div><!-- .folder-wrap -->
-
-
-</div><!-- .stage -->
-<!--<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>-->
-<script src="../JS/notesSelect.js"></script>
-<section class="main-notes-sec">
-    <div class="computer-science-dept">
-
+                        </select>
+                    </label>
+                </div>
+            </div>
+        </div>
     </div>
-</section>
+    <div class="courses-container">
+        <div class="course">
+            <div class="course-preview">
+                <h6>Department</h6>
+                <h2>Mechanical</h2>
+                <a href="#">Last updated <i class="fas fa-chevron-right"></i></a>
+                <h6 style="font-size: 10px">2/10/2021</h6>
+            </div>
+            <div class="course-info">
+                <!--                <div class="progress-container">-->
+                <!--                    <div class="progress"></div>-->
+                <!--                    <span class="progress-text">-->
+                <!--					6/9 Challenges-->
+                <!--				</span>-->
+                <!--                </div>-->
+                <h6>Chapter 4</h6>
+                <h2>Callbacks & Closures</h2>
+                <button class="btn">Continue</button>
+                <div class="selectdiv">
+                    <label>
+                        <select>
+                            <option selected>Select semester </option>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Last long option</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="courses-container">
+        <div class="course">
+            <div class="course-preview">
+                <h6>Department</h6>
+                <h2>Electronics and Electrical</h2>
+                <a href="#">Last updated <i class="fas fa-chevron-right"></i></a>
+                <h6 style="font-size: 10px">2/10/2021</h6>
+            </div>
+            <div class="course-info">
+                <!--                <div class="progress-container">-->
+                <!--                    <div class="progress"></div>-->
+                <!--                    <span class="progress-text">-->
+                <!--					6/9 Challenges-->
+                <!--				</span>-->
+                <!--                </div>-->
+                <h6>Chapter 4</h6>
+                <h2>Callbacks & Closures</h2>
+                <button class="btn">Continue</button>
+                <div class="selectdiv">
+                    <label>
+                        <select>
+                            <option selected>Select semester </option>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Last long option</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="courses-container">
+        <div class="course">
+            <div class="course-preview">
+                <h6>Department</h6>
+                <h2>Information Science</h2>
+                <a href="#">Last updated <i class="fas fa-chevron-right"></i></a>
+                <h6 style="font-size: 10px">2/10/2021</h6>
+            </div>
+            <div class="course-info">
+                <!--                <div class="progress-container">-->
+                <!--                    <div class="progress"></div>-->
+                <!--                    <span class="progress-text">-->
+                <!--					6/9 Challenges-->
+                <!--				</span>-->
+                <!--                </div>-->
+                <h6>Chapter 4</h6>
+                <h2>Callbacks & Closures</h2>
+                <button class="btn">Continue</button>
+                <div class="selectdiv">
+                    <label>
+                        <select id="new-select">
+                            <option selected>Select semester </option>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Last long option</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        let a = $('#new-select').value;
+        if (a === "Select semester"){
+            $('.btn').attr("disabled");
+        }
+        else {
+            $('.btn').removeAttr("disabled");
+        }
+    })
+</script>
 
 </body>
 
 </html>
-<!--TODO:department,semester,subject_code,module_no,filename,comments-->
+
 
 <!--test 1-->
 
