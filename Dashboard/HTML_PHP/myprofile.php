@@ -65,6 +65,10 @@
 //        print_r($projects);
     }
 
+
+
+
+
    if(!isset($_SESSION['email'])) {
        header('location: ../../index.html');
    }

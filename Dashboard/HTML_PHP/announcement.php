@@ -155,7 +155,7 @@
 
     <div id="my-overlay">
         <div class="my-filter-popup" id="myFilterForm">
-            <form action="" class="form-container" method="POST">
+            <form action="announcement.php" class="form-container" method="POST">
 
                 <!--            <div class="form-group" style="width: 360px" >-->
                 <!--                <label for="exampleFormControlTextarea1" >Title</label>-->
@@ -163,7 +163,7 @@
                 <!--            </div>-->
                 <div class="form-group" >
                     <label for="inputState">Choose Department</label>
-                    <select id="inputState" class="form-control" name="department" required>
+                    <select id="inputState" class="form-control" name="department_filter" required>
                         <option selected>All</option>
                         <option>Computer Science</option>
                         <option>Electronic and Communication</option>
@@ -175,7 +175,7 @@
                 <div class="form-row">
                     <div class="form-group col-md-6" >
                         <label for="inputState" >Semester</label>
-                        <select id="inputState" class="form-control" name="semester" required>
+                        <select id="inputState" class="form-control" name="semester_filter" required>
                             <option selected>All</option>
                             <option>1</option>
                             <option>2</option>
@@ -190,7 +190,7 @@
                     </div>
                     <div class="form-group col-md-6">
                         <label for="inputState">Section</label>
-                        <select id="inputState" class="form-control" name="sections" required>
+                        <select id="inputState" class="form-control" name="sections_filter" required>
                             <option selected>All</option>
                             <option>A</option>
                             <option>B</option>
@@ -202,7 +202,7 @@
                         <button onclick="off()" type="button" class="btn btn-primary btn-sm bg-dark" style="background-color: #181717">Cancel</button>
                     </div>
                     <div class="col">
-                        <button type="submit" class="btn btn-primary btn-sm bg">Filter</button>
+                        <button type="submit" class="btn btn-primary btn-sm bg" name="filter">Filter</button>
                     </div>
                 </div>
             </form>
