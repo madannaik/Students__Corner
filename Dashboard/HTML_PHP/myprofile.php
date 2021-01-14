@@ -56,6 +56,7 @@
 
         //    get all announcement from db and store it as an array
         $my_announcements = mysqli_fetch_all($result, MYSQLI_ASSOC);
+        $announcement_count = count($my_announcements);
         //    print_r($my_announcements);
     }else{
 
@@ -177,7 +178,7 @@
                         <div class="right">
 
                         <div>
-                            <h3><?php echo $project_count; ?></h3>
+                            <h3><?php echo $announcement_count; ?></h3>
                             <h3 class="number-title">Announcements</h3>
                         </div>
 
