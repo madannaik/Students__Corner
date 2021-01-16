@@ -320,12 +320,12 @@ body{
 }
 .my-form-popup{
     position: absolute;
-    left: 35%;
-    top: 5%;
-
+    left: 15vw;
+    top: 8vh;
 }
 .form-container {
-    max-width: 500px;
+    width: 70vw;
+    max-height: 77vh;
     background-color: white;
     padding: 20px;
     border-radius: 25px;
@@ -372,8 +372,8 @@ body{
 }
 .my-pop-up-button{
     position: fixed;
-    left: 93%;
-    bottom:-30%;
+    left: 93vw;
+    top:57vh;
     background-color: #10181d;
     z-index: 1;
     width:60px;
@@ -391,3 +391,4 @@ body{
     background:#0175c2;
     color:white;
 }
+

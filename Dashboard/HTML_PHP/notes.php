@@ -25,21 +25,34 @@ include('dashBoard.php');
     <!--    TODO:    change the color of the post button if possible-->
     <!--        TODO: increase the text area for announcement-->
     <div class="my-form-popup" id="myForm" >
-        <form action="announcementdb.php" class="form-container" method="POST">
+        <form action="announcementdb.php" class="form-container" method="POST" enctype="multipart/form-data">
             <h1>New Announcement</h1>
-            <!--            <div class="form-group" style="width: 360px" >-->
-            <!--                <label for="exampleFormControlTextarea1" >Title</label>-->
-            <!--                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" name="title" required></textarea>-->
-            <!--            </div>-->
-            <div class="form-group" style="width: 410px" >
-                <label for="exampleFormControlTextarea1">Announcement</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="body" required></textarea>
+            <div class="form-row">
+                <div class="form-group col-md-6" >
+                    <label for="pdf_upload" class="file-label">Select pdf file</label>
+                    <input class="form-control" id="pdf_upload"  name="pdf" type="file"  accept="application/pdf" >
+                </div>
+                <div class="form-group col-md-6"  >
+                    <label for="subject_name">Subject name</label>
+                    <input class="form-control" id="subject_name"  name="subject_name" placeholder="null">
+                </div>
             </div>
-            <div class="form-group" style="width: 410px" >
-                <label for="exampleFormControlTextarea1">Link if any</label>
-                <input class="form-control" id="exampleFormControlTextarea1"  name="announcement_link" placeholder="null">
+
+            <div class="form-row">
+                <div class="form-group col-md-4"  >
+                    <label for="Subject code">Subject code</label>
+                    <input class="form-control" id="Subject code"  name="subject_code" placeholder="null">
+                </div>
+                <div class="form-group col-md-4"  >
+                    <label for="Module name">Module name</label>
+                    <input class="form-control" id="Module name"  name="Module_name" placeholder="null">
+                </div>
+                <div class="form-group col-md-4"  >
+                    <label for="Module number">module number</label>
+                    <input class="form-control" id="Module number"  name="module_number" placeholder="null">
+                </div>
             </div>
-            <div class="form-group" >
+            <div class="form-group">
                 <label for="inputState">Choose Department</label>
                 <select id="inputState" class="form-control" name="department" required>
                     <option selected>All</option>
@@ -75,6 +88,8 @@ include('dashBoard.php');
                     </select>
                 </div>
             </div>
+
+
             <div class="row">
                 <div class="col">
                     <button onclick="off()" type="button" class="btn btn-primary btn-sm bg-dark" style="background-color: #181717">Cancel</button>
@@ -96,12 +111,6 @@ include('dashBoard.php');
                 <h6 style="font-size: 10px">2/10/2021</h6>
             </div>
             <div class="course-info">
-<!--                <div class="progress-container">-->
-<!--                    <div class="progress"></div>-->
-<!--                    <span class="progress-text">-->
-<!--					6/9 Challenges-->
-<!--				</span>-->
-<!--                </div>-->
                 <h6>Department</h6>
                 <h2>Computer Science</h2>
                 <button class="btn1">Continue</button>
@@ -112,11 +121,11 @@ include('dashBoard.php');
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
-                            <option>3</option>
-                            <option>3</option>
-                            <option>3</option>
-                            <option>3</option>
-                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
 
                         </select>
                     </label>
@@ -132,12 +141,7 @@ include('dashBoard.php');
                 <h6 style="font-size: 10px">2/10/2021</h6>
             </div>
             <div class="course-info">
-                <!--                <div class="progress-container">-->
-                <!--                    <div class="progress"></div>-->
-                <!--                    <span class="progress-text">-->
-                <!--					6/9 Challenges-->
-                <!--				</span>-->
-                <!--                </div>-->
+
                 <h6>Department</h6>
                 <h2>Mechanical</h2>
                 <button class="btn1">Continue</button>
@@ -145,9 +149,14 @@ include('dashBoard.php');
                     <label>
                         <select>
                             <option selected>Select semester </option>
-                            <option>Option 1</option>
-                            <option>Option 2</option>
-                            <option>Last long option</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
                         </select>
                     </label>
                 </div>
@@ -162,12 +171,7 @@ include('dashBoard.php');
                 <h6 style="font-size: 10px">2/10/2021</h6>
             </div>
             <div class="course-info">
-                <!--                <div class="progress-container">-->
-                <!--                    <div class="progress"></div>-->
-                <!--                    <span class="progress-text">-->
-                <!--					6/9 Challenges-->
-                <!--				</span>-->
-                <!--                </div>-->
+
                 <h6>Department</h6>
                 <h2>Electronics and Electrical</h2>
                 <button class="btn1">Continue</button>
@@ -175,9 +179,14 @@ include('dashBoard.php');
                     <label>
                         <select>
                             <option selected>Select semester </option>
-                            <option>Option 1</option>
-                            <option>Option 2</option>
-                            <option>Last long option</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
                         </select>
                     </label>
                 </div>
@@ -192,12 +201,7 @@ include('dashBoard.php');
                 <h6 style="font-size: 10px">2/10/2021</h6>
             </div>
             <div class="course-info">
-                <!--                <div class="progress-container">-->
-                <!--                    <div class="progress"></div>-->
-                <!--                    <span class="progress-text">-->
-                <!--					6/9 Challenges-->
-                <!--				</span>-->
-                <!--                </div>-->
+
                 <h6>Department</h6>
                 <h2>Information Science</h2>
                 <button class="btn1">Continue</button>
@@ -205,9 +209,14 @@ include('dashBoard.php');
                     <label>
                         <select id="new-select">
                             <option selected>Select semester </option>
-                            <option>Option 1</option>
-                            <option>Option 2</option>
-                            <option>Last long option</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
                         </select>
                     </label>
                 </div>
@@ -253,6 +262,6 @@ include('dashBoard.php');
 </html>
 
 
-<!--test 1-->
+
 
 
