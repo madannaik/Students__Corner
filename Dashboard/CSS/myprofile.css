@@ -15,13 +15,13 @@ body{
     /* justify-content: center; */
     align-items: center;
     min-height: 90vh;
-    margin-left: 120px;
+    margin-left: 5vw;
     border-radius: 30px;
 
 }
 
 .card{
-    margin-right: 300px;
+    margin-right: 27vw;
     position: relative;
     width: 450px;
     background-color: #fff;
@@ -473,6 +473,7 @@ h1 {
     font-size: 40px;
     max-width: 600px;
     position:relative;
+    left: 5vw;
     margin-left: 405px;
     }
 h1:before{

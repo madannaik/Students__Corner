@@ -60,10 +60,12 @@
         //    print_r($my_announcements);
     }else{
 
-        $s = "SELECT projects.uploded_time, projects.project_head, projects.project_body, projects.project_link,projects.project_image,projects.usn, student.first_name, student.last_name, student.department, student.semester, student.sections, student.profile_picture FROM projects JOIN student on projects.usn = student.usn ORDER BY uploded_time DESC ";
+        $student_usn = $student_info['usn'];
+        $s = "SELECT projects.uploded_time, projects.project_head, projects.project_body, projects.project_link,projects.project_image,projects.usn, student.first_name, student.last_name, student.department, student.semester, student.sections, student.profile_picture FROM projects JOIN student on projects.usn = student.usn WHERE projects.usn = '$student_usn' ORDER BY uploded_time DESC ";
         $result = mysqli_query($conn,$s);
         $projects = mysqli_fetch_all($result, MYSQLI_ASSOC);
         $project_count = count($projects);
+        
 //        print_r($projects);
     }
 
@@ -240,7 +242,7 @@
     <?php } ?>
 
 
-
+    
     <?php if($label == 'teacher') { ?>
         <div class="myposts">
             <center><h1>Announcements</h1></center>
@@ -318,6 +320,7 @@
         $s = "SELECT projects.uploded_time, projects.project_head, projects.project_body, projects.project_link,projects.project_image,projects.usn, student.first_name, student.last_name, student.department, student.semester, student.sections, student.profile_picture FROM projects JOIN student on projects.usn = student.usn WHERE projects.usn = '$student_usn' ORDER BY uploded_time DESC ";
         $result = mysqli_query($conn,$s);
         $projects = mysqli_fetch_all($result, MYSQLI_ASSOC);
+        // $project_count = count($projects);
         ?>
 <!--    this section is for Student posted articles-->
         <section id="cards">
