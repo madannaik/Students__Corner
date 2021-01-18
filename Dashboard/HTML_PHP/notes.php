@@ -113,15 +113,15 @@
                 <div class="form-group col-md-6">
                     <label for="inputState" >Semester</label>
                     <select id="inputState" class="form-control" name="semester" required>
-                        <option >All</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                        <option>7</option>
-                        <option>8</option>
+
+                        <option selected>Semester 1</option>
+                        <option>Semester 2</option>
+                        <option>Semester 3</option>
+                        <option>Semester 4</option>
+                        <option>Semester 5</option>
+                        <option>Semester 6</option>
+                        <option>Semester 7</option>
+                        <option>Semester 8</option>
 
                     </select>
                 </div>
@@ -164,15 +164,15 @@
                 <div class="selectdiv">
                     <label>
                         <select class="new-select" name="semester">
-                            <option selected>1</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
+
+                            <option selected>Semester 1</option>
+                            <option>Semester 2</option>
+                            <option>Semester 3</option>
+                            <option>Semester 4</option>
+                            <option>Semester 5</option>
+                            <option>Semester 6</option>
+                            <option>Semester 7</option>
+                            <option>Semester 8</option>
 
                         </select>
                     </label>
@@ -197,15 +197,15 @@
                 <div class="selectdiv">
                     <label>
                         <select class="new-select" name="semester">
-                            <option selected >1</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
+
+                            <option selected>Semester 1</option>
+                            <option>Semester 2</option>
+                            <option>Semester 3</option>
+                            <option>Semester 4</option>
+                            <option>Semester 5</option>
+                            <option>Semester 6</option>
+                            <option>Semester 7</option>
+                            <option>Semester 8</option>
                         </select>
                     </label>
                 </div>
@@ -232,15 +232,14 @@
                 <div class="selectdiv" class="new-select" name="semester">
                     <label>
                         <select class="new-select" name="semester">
-                            <option selected>Select semester </option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
+
+                            <option selected>Semester 1</option>
+                            <option>Semester 2</option>
+                            <option>Semester 3</option>
+                            <option>Semester 5</option>
+                            <option>Semester 6</option>
+                            <option>Semester 7</option>
+                            <option>Semester 8</option>
                         </select>
                     </label>
                 </div>
@@ -263,15 +262,15 @@
                 <div class="selectdiv">
                     <label>
                         <select class="new-select" name="semester">
-                            <option selected>1</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
+
+                            <option selected>Semester 1</option>
+                            <option>Semester 2</option>
+                            <option>Semester 3</option>
+                            <option>Semester 4</option>
+                            <option>Semester 5</option>
+                            <option>Semester 6</option>
+                            <option>Semester 7</option>
+                            <option>Semester 8</option>
                         </select>
                     </label>
                 </div>
@@ -294,15 +293,15 @@
                 <div class="selectdiv">
                     <label>
                         <select class="new-select" name="semester">
-                            <option selected >1</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
+
+                            <option selected>Semester 1</option>
+                            <option>Semester 2</option>
+                            <option>Semester 3</option>
+                            <option>Semester 4</option>
+                            <option>Semester 5</option>
+                            <option>Semester 6</option>
+                            <option>Semester 7</option>
+                            <option>Semester 8</option>
                         </select>
                     </label>
                 </div>
@@ -333,32 +332,7 @@
 
 
 </script>
-<script>
-    // let value = document.getElementsByClassName('new-select');
-    // let button = document.getElementsByClassName('btn1');
-    // for (let i=0;i<=value.length;i++){
-    //     if (value[i].value === "Select semester"){
-    //         button[i].setAttribute("disabled","");
-    //         button[i].style.opacity = '0.5';
-    //         button[i].style.cursor = 'not-allowed';
-    //     }
-    // }
-    $(function (){
 
-
-        $('.new-select').change(function ())
-        // for (let j=0;j<=value.length;j++){
-        //     if(value[i].value === 1) {
-        //         button[i].removeAttribute("disabled");
-        //         button[i].style.opacity = '1';
-        //         button[i].style.cursor = 'pointerup';
-        //     }
-        // }
-    })
-
-
-
-</script>
 
 </body>
 
