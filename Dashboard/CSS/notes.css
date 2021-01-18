@@ -187,6 +187,7 @@ body{
     width: 100%;
 }
 
+
 /*.progress-container {*/
 /*    position: absolute;*/
 /*    top: 30px;*/
@@ -231,6 +232,7 @@ body{
     bottom: 30px;
     right: 30px;
     letter-spacing: 1px;
+
 }
 
 
@@ -277,7 +279,6 @@ body{
     padding: 0 0 5px;
     border-bottom: 1px solid #999;
     /*left line */
-
     position: absolute;
     pointer-events: none;
 }
@@ -391,4 +392,5 @@ body{
     background:#0175c2;
     color:white;
 }
+
 

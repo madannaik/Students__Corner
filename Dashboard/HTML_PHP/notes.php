@@ -110,10 +110,10 @@
                 </select>
             </div>
             <div class="form-row">
-                <div class="form-group col-md-6" >
+                <div class="form-group col-md-6">
                     <label for="inputState" >Semester</label>
                     <select id="inputState" class="form-control" name="semester" required>
-                        <option selected>All</option>
+                        <option >All</option>
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -150,7 +150,7 @@
 
 <!-- ui for notes first page -->
 
-<form action="notes_view.php?dept=Computer Science" method="POST">
+<form action="notes_pdf.php?dept=Computer Science" method="POST">
 <div class="main-flex">
     <div class="courses-container">
         <div class="course">
@@ -163,8 +163,8 @@
                 <button class="btn1">Continue</button>
                 <div class="selectdiv">
                     <label>
-                        <select id="new-select" name="semester">
-                            <option selected>Select semester </option>
+                        <select class="new-select" name="semester">
+                            <option selected>1</option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -194,11 +194,10 @@
 
                 <h6>Department</h6>
                 <h2>Information Science</h2>
-                
                 <div class="selectdiv">
                     <label>
-                        <select id="new-select" name="semester">
-                            <option selected >Select semester </option>
+                        <select class="new-select" name="semester">
+                            <option selected >1</option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -230,9 +229,9 @@
                 <h6>Department</h6>
                 <h2>Mechanical Engineering</h2>
                 <button class="btn1">Continue</button>
-                <div class="selectdiv" id="new-select" name="semester">
+                <div class="selectdiv" class="new-select" name="semester">
                     <label>
-                        <select id="new-select" name="semester">
+                        <select class="new-select" name="semester">
                             <option selected>Select semester </option>
                             <option>1</option>
                             <option>2</option>
@@ -263,8 +262,8 @@
                 <button class="btn1" type="submit">Continue</button>
                 <div class="selectdiv">
                     <label>
-                        <select id="new-select" name="semester">
-                            <option selected>Select semester </option>
+                        <select class="new-select" name="semester">
+                            <option selected>1</option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -291,11 +290,11 @@
 
                 <h6>Department</h6>
                 <h2>Electronics and Electrical</h2>
-                <button class="btn1" type="submit">Continue</button>
+                <button class="btn1"  type="submit">Continue</button>
                 <div class="selectdiv">
                     <label>
-                        <select id="new-select" name="semester">
-                            <option selected>Select semester </option>
+                        <select class="new-select" name="semester">
+                            <option selected >1</option>
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -311,8 +310,6 @@
         </div>
     </div>
     </form>
-
-
 </div>
 
 
@@ -337,16 +334,30 @@
 
 </script>
 <script>
-    $(function () {
-        let a = $('#new-select').value;
-        console.log(a);
-        if (a === "Select semester"){
-            $('.btn').attr("disabled");
-        }
-        else {
-            $('.btn').removeAttr("disabled");
-        }
+    // let value = document.getElementsByClassName('new-select');
+    // let button = document.getElementsByClassName('btn1');
+    // for (let i=0;i<=value.length;i++){
+    //     if (value[i].value === "Select semester"){
+    //         button[i].setAttribute("disabled","");
+    //         button[i].style.opacity = '0.5';
+    //         button[i].style.cursor = 'not-allowed';
+    //     }
+    // }
+    $(function (){
+
+
+        $('.new-select').change(function ())
+        // for (let j=0;j<=value.length;j++){
+        //     if(value[i].value === 1) {
+        //         button[i].removeAttribute("disabled");
+        //         button[i].style.opacity = '1';
+        //         button[i].style.cursor = 'pointerup';
+        //     }
+        // }
     })
+
+
+
 </script>
 
 </body>

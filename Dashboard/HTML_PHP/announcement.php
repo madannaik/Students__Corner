@@ -104,7 +104,7 @@
 <!--        TODO: increase the text area for announcement-->
     <div class="my-form-popup" id="myForm" >
         <form action="announcementdb.php" class="form-container" method="POST">
-            <h1>New Announcement</h1>
+            <h3 style="text-align: center">New Announcement</h3>
 <!--            <div class="form-group" style="width: 360px" >-->
 <!--                <label for="exampleFormControlTextarea1" >Title</label>-->
 <!--                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" name="title" required></textarea>-->
