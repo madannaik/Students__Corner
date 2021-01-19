@@ -26,6 +26,6 @@
         header('location: ../../Dashboard/HTML_PHP/announcement.php');
     }else{
 //        if not then redirect them back to loginteacher.php page
-        header('location: loginstudent.php');
+        header('location: loginstudent.php?err=1');
     }
 ?>
