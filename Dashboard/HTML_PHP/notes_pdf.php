@@ -26,7 +26,9 @@ $stmt->execute();
     </style>
     <title>Notes</title>
     <link rel="stylesheet" href="../CSS/notes_pdf.css">
-<!--    <script src="https://kit.fontawesome.com/b5cff000aa.js" crossorigin="anonymous"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!--    <script src="https://kit.fontawesome.com/b5cff000aa.js" crossorigin="anonymous"></script>-->
 </head>
 
 <body>
@@ -58,11 +60,16 @@ $stmt->execute();
 <!--            </tr>-->
             <?php while($row = $stmt->fetch()) {?>
             <tr>
+                <?php $fetch_teacher_name = $dataBase->prepare("SELECT first_name,last_name FROM teacher where teacher_id=?");
+                        $fetch_teacher_name->bindParam(1,$row['teacher_id']);
+                        $fetch_teacher_name->execute();
+                        $result = $fetch_teacher_name->fetch();
+                ?>
             <?php echo "<td>".$row['subject_code']."</td>"; ?>
             <?php echo "<td>".$row['subject_name']."</td>"; ?>
             <?php echo "<td>".$row['module_number']."</td>"; ?>
-            <?php echo "<td>".$row['teacher_id']."</td>"; ?>
-            <?php echo "<td><a target='_blank' href='view.php?id=".$row['pdf_id']."'>Download</a></td>"; ?>
+            <?php echo "<td>".$result['first_name']." ".$result['last_name']."</td>"; ?>
+            <?php echo "<td><a target='_blank' href='notes_view.php?id=".$row['pdf_id']."'>Download</a></td>"; ?>
             </tr>
                 <?php } ?>
             </tbody>
@@ -71,7 +78,15 @@ $stmt->execute();
 </section>
 
 
+<script>
+    $(function (
+        $(window).on("load resize ", function() {
+        let scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
+        $('.tbl-header').css({'padding-right':scrollWidth});
+    }).resize();
+    ))
 
+</script>
 </body>
 
 </html>

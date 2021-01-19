@@ -231,7 +231,9 @@
 <!--This is code is for Announcement Card-->
 <!--    TODO: put a button to the link -->
 <?php if(count($filtered_announcements) == 0 && count($announcements) == 0) { ?>
-    <center><h1>hatr hatr</h1></center>
+    <div style="display: flex;justify-content: center;align-content: center;margin-top: 15%;margin-left: 10%">
+        <img src="../../assets/no_data.svg" alt="">
+    </div>
 <?php } else { ?>
     <section id="cards">
         <div class="container py-2">

@@ -103,7 +103,7 @@
                 <select id="inputState" class="form-control" name="department" required>
                     <option selected>All</option>
                     <option>Computer Science</option>
-                    <option>Electronic and Communication</option>
+                    <option>Electronics and Communication</option>
                     <option>Electronics and Electrical</option>
                     <option>Mechanical Engineering</option>
                     <option>Information Science</option>

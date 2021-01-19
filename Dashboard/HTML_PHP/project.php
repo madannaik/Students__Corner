@@ -118,7 +118,7 @@
 
 
 <!--************************************************************************************************************************************************************************-->
-<!-- TODO: put a button to the link -->
+
 <section id="cards">
     <div class="container py-2">
         <div class="d-flex flex-column flex-wrap align-items-center ">
