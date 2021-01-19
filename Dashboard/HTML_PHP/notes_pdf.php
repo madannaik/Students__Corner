@@ -49,13 +49,13 @@ $stmt->execute();
     <div class="tbl-content">
         <table cellpadding="0" cellspacing="0" border="0">
             <tbody>
-            <tr>
-                <td>18CS51</td>
-                <td>ATC</td>
-                <td>1</td>
-                <td>Bill Compound</td>
-                <td><a href="view.php" target="_blank" rel="noopener noreferrer">Download</a></td>
-            </tr>
+<!--            <tr>-->
+<!--                <td>18CS51</td>-->
+<!--                <td>ATC</td>-->
+<!--                <td>1</td>-->
+<!--                <td>Bill Compound</td>-->
+<!--                <td><a href="view.php" target="_blank" rel="noopener noreferrer">Download</a></td>-->
+<!--            </tr>-->
             <?php while($row = $stmt->fetch()) {?>
             <tr>
             <?php echo "<td>".$row['subject_code']."</td>"; ?>
