@@ -43,7 +43,7 @@
         $stmt->bindParam(8,$semester);
         $stmt->execute();
 
-echo "uploDED";
+        header('location: notes.php');
 
 //        $pdf_insert = "INSERT INTO pdf(teacher_id, pdf_name,module_number,subject_name,subject_code, branch, semester) values ('$teacher_id','$pdf_name','$module_number','$subject_name','$subject_code','$department','$semester')";
 ////        $result = mysqli_query($conn, $pdf_insert);

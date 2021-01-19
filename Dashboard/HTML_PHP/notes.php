@@ -115,7 +115,7 @@
                     <select id="inputState" class="form-control" name="semester" required>
 
                         <option selected>Semester 1</option>
-                        <option>Semester 2</option>
+                        <option >Semester 2</option>
                         <option>Semester 3</option>
                         <option>Semester 4</option>
                         <option>Semester 5</option>
@@ -182,7 +182,7 @@
     </div>
     </form>
 
-    <form action="notes_view.php?dept=Information Science" method="POST">
+    <form action="notes_pdf.php?dept=Information Science" method="POST">
     <div class="courses-container">
         <div class="course">
             <div class="course-preview">
@@ -216,7 +216,7 @@
     </form>
 
 
-    <form action="notes_view.php?dept=Mechanical Engineering" method="POST">
+    <form action="notes_pdf.php?dept=Mechanical Engineering" method="POST">
     <div class="courses-container">
         <div class="course">
             <div class="course-preview">
@@ -248,7 +248,7 @@
     </div>
     </form>
 
-    <form action="notes_view.php?dept=Electronics and Communication" method="POST">
+    <form action="notes_pdf.php?dept=Electronics and Communication" method="POST">
     <div class="courses-container">
         <div class="course">
             <div class="course-preview">
@@ -279,7 +279,7 @@
     </div>
     </form>
 
-    <form action="notes_view.php?dept=Electronics and Electrical" method="POST">
+    <form action="notes_pdf.php?dept=Electronics and Electrical" method="POST">
     <div class="courses-container">
         <div class="course">
             <div class="course-preview">

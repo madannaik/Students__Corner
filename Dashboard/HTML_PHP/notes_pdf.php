@@ -1,9 +1,18 @@
 <?php
 include('dashBoard.php');
+
+session_start();
+$dataBase = new PDO("mysql:host=localhost;dbname=studentscorner","raj","test1234");
+
 $semester = $_POST['semester'];
 $dept = $_GET['dept'];
 
-
+$stmt = $dataBase->prepare("SELECT * FROM pdf WHERE branch = ? AND semester=?");
+$stmt->bindParam(1,$dept);
+$stmt->bindParam(2,$semester);
+$stmt->execute();
+// $row = $stmt->fetch();
+// print_r($row);
 ?>
 
 <!DOCTYPE html>
@@ -47,84 +56,15 @@ $dept = $_GET['dept'];
                 <td>Bill Compound</td>
                 <td><a href="view.php" target="_blank" rel="noopener noreferrer">Download</a></td>
             </tr>
+            <?php while($row = $stmt->fetch()) {?>
             <tr>
-                <td>18CS52</td>
-                <td>CN</td>
-                <td>2</td>
-                <td>Angela me</td>
-                <td><a href="http://">Download</a></td>
+            <?php echo "<td>".$row['subject_code']."</td>"; ?>
+            <?php echo "<td>".$row['subject_name']."</td>"; ?>
+            <?php echo "<td>".$row['module_number']."</td>"; ?>
+            <?php echo "<td>".$row['teacher_id']."</td>"; ?>
+            <?php echo "<td><a target='_blank' href='view.php?id=".$row['pdf_id']."'>Download</a></td>"; ?>
             </tr>
-            <tr>
-                <td>18CS53</td>
-                <td>ADE</td>
-                <td>3</td>
-                <td>sundar samneai</td>
-                <td><a href="http://">Download</a></td>
-            </tr>
-            <tr>
-                <td>18CS54</td>
-                <td>ADBMS</td>
-                <td>1</td>
-                <td>Satya nadella</td>
-                <td><a href="http://">Download</a></td>
-            </tr>
-            <tr>
-                <td>18CS51</td>
-                <td>ATC</td>
-                <td>1</td>
-                <td>Bill Compound</td>
-                <td><a href="view.php" target="_blank" rel="noopener noreferrer">Download</a></td>
-            </tr>
-            <tr>
-                <td>18CS52</td>
-                <td>CN</td>
-                <td>2</td>
-                <td>Angela me</td>
-                <td><a href="http://">Download</a></td>
-            </tr>
-            <tr>
-                <td>18CS53</td>
-                <td>ADE</td>
-                <td>3</td>
-                <td>sundar samneai</td>
-                <td><a href="http://">Download</a></td>
-            </tr>
-            <tr>
-                <td>18CS54</td>
-                <td>ADBMS</td>
-                <td>1</td>
-                <td>Satya nadella</td>
-                <td><a href="http://">Download</a></td>
-            </tr>
-            <tr>
-                <td>18CS51</td>
-                <td>ATC</td>
-                <td>1</td>
-                <td>Bill Compound</td>
-                <td><a href="view.php" target="_blank" rel="noopener noreferrer">Download</a></td>
-            </tr>
-            <tr>
-                <td>18CS52</td>
-                <td>CN</td>
-                <td>2</td>
-                <td>Angela me</td>
-                <td><a href="http://">Download</a></td>
-            </tr>
-            <tr>
-                <td>18CS53</td>
-                <td>ADE</td>
-                <td>3</td>
-                <td>sundar samneai</td>
-                <td><a href="http://">Download</a></td>
-            </tr>
-            <tr>
-                <td>18CS54</td>
-                <td>ADBMS</td>
-                <td>1</td>
-                <td>Satya nadella</td>
-                <td><a href="http://">Download</a></td>
-            </tr>
-
+                <?php } ?>
             </tbody>
         </table>
     </div>
