@@ -72,7 +72,7 @@
     <!--        TODO: increase the text area for announcement-->
     <div class="my-form-popup" id="myForm" >
         <form action="notes_upload_db.php" class="form-container" method="POST" enctype="multipart/form-data">
-            <h1>New Announcement</h1>
+            <h1 >Notes upload</h1>
             <div class="form-row">
                 <div class="form-group col-md-6" >
                     <label for="pdf_upload" class="file-label">Select pdf file</label>

@@ -33,6 +33,7 @@ $stmt->execute();
 
 <body>
 <center><?php  echo $semester;
+    echo "<br>";
     echo $dept; ?></center>
 <section >
     <div class="tbl-header">
@@ -78,15 +79,15 @@ $stmt->execute();
 </section>
 
 
-<script>
-    $(function (
-        $(window).on("load resize ", function() {
-        let scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
-        $('.tbl-header').css({'padding-right':scrollWidth});
-    }).resize();
-    ))
-
-</script>
+<!--<script>-->
+<!--    $(function (-->
+<!--        $(window).on("load resize ", function() {-->
+<!--        let scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();-->
+<!--        $('.tbl-header').css({'padding-right':scrollWidth});-->
+<!--    }).resize();-->
+<!--    ))-->
+<!---->
+<!--</script>-->
 </body>
 
 </html>
