@@ -9,8 +9,10 @@ The site enables students to access notes, to be updates with the announcement a
 #### Technologies used
 ---
 FRONTEND - HTML,CSS,JS.
-BACKEND - PHP,MYSQL
-WEB-SERVER - XAAMP
+
+BACKEND - PHP,MYSQL.
+
+WEB-SERVER - XAAMP.
 
 ---
 
