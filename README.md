@@ -6,8 +6,8 @@ The site enables students to access notes, to be updates with the announcement a
 
 ---
 
-#### Technologies used
----
+#### TECHNOLOGIES USED
+
 FRONTEND - HTML,CSS,JS.
 
 BACKEND - PHP,MYSQL.
@@ -17,10 +17,10 @@ WEB-SERVER - XAAMP.
 ---
 
 #### INSTALLATION PROCESS:
-1)Install Xammp software[install.](https://www.apachefriends.org/index.html).
-2)Download the above code and move it to ../xaamp/htdocs.
-3)Goto  to Xammp folder in your pc and search for **mysql.ini** file in ..\mysql\bin folder and Change **max_allowed_packet=2M** to **max_allowed_packet=16M**(which is required for uploading pdf files to server).
-4)Export the database file into xaamp server.
-5)Add user to database(user:raj  password:test1234) and give global access for mentioned user.
-6)It needs active internet connection.
+1)Install Xammp software[install.](https://www.apachefriends.org/index.html). <br>
+2)Download the above code and move it to ../xaamp/htdocs. <br>
+3)Goto  to Xammp folder in your pc and search for **mysql.ini** file in ..\mysql\bin folder and Change **max_allowed_packet=2M** to **max_allowed_packet=16M**(which is required for uploading pdf files to server). <br>
+4)Export the database file into xaamp server. <br>
+5)Add user to database(user:raj  password:test1234) and give global access for mentioned user. <br> 
+6)It needs active internet connection. <br>
   
